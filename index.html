@@ -1,0 +1,2023 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ПакТара KZ — ПЭТ бутылки оптом в Алматы</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Unbounded:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green: #2d7a3a;
+  --green-light: #3da44e;
+  --green-pale: #e8f5eb;
+  --green-dark: #1a4f23;
+  --text: #1a1a1a;
+  --text-muted: #6b7280;
+  --bg: #f9faf8;
+  --white: #ffffff;
+  --border: #e5e7e3;
+  --card-bg: #ffffff;
+  --radius: 16px;
+  --shadow: 0 4px 24px rgba(45,122,58,0.10);
+  --shadow-hover: 0 8px 40px rgba(45,122,58,0.18);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 5vw;
+}
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  gap: 24px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.logo-icon {
+  width: 38px;
+  height: 38px;
+  background: var(--green);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Unbounded', sans-serif;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+.logo-text {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.2;
+}
+.logo-sub {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--text-muted);
+  font-family: 'Manrope', sans-serif;
+}
+nav { display: flex; gap: 28px; }
+nav a {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 14px;
+  font-weight: 500;
+  transition: color .2s;
+}
+nav a:hover { color: var(--green); }
+.header-cta {
+  background: var(--green);
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 10px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background .2s, transform .15s;
+}
+.header-cta:hover { background: var(--green-light); transform: translateY(-1px); }
+.burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+.burger span { width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: .3s; }
+
+/* HERO */
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 5vw 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--green-pale);
+  color: var(--green-dark);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+.hero-badge::before {
+  content: '';
+  width: 8px; height: 8px;
+  background: var(--green);
+  border-radius: 50%;
+}
+.hero h1 {
+  font-family: 'Unbounded', sans-serif;
+  font-size: clamp(30px, 4vw, 52px);
+  font-weight: 900;
+  line-height: 1.1;
+  color: var(--text);
+  margin-bottom: 20px;
+}
+.hero h1 span { color: var(--green); }
+.hero p {
+  font-size: 17px;
+  color: var(--text-muted);
+  margin-bottom: 36px;
+  line-height: 1.7;
+  max-width: 480px;
+}
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+.btn-primary {
+  background: var(--green);
+  color: #fff;
+  border: none;
+  padding: 15px 32px;
+  border-radius: 12px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background .2s, transform .15s, box-shadow .2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-primary:hover { background: var(--green-light); transform: translateY(-2px); box-shadow: var(--shadow-hover); }
+.btn-secondary {
+  background: transparent;
+  color: var(--green);
+  border: 2px solid var(--green);
+  padding: 13px 28px;
+  border-radius: 12px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background .2s, color .2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-secondary:hover { background: var(--green-pale); }
+.hero-stats {
+  display: flex;
+  gap: 36px;
+  margin-top: 44px;
+  padding-top: 36px;
+  border-top: 1px solid var(--border);
+}
+.stat-num {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--green);
+}
+.stat-label { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+
+.hero-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-visual-bg {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, var(--green-pale) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.hero-bottles-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 20px;
+}
+.hero-bottle-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px 14px 14px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  transition: transform .2s, box-shadow .2s;
+}
+.hero-bottle-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+.bottle-emoji { font-size: 42px; margin-bottom: 8px; line-height: 1; }
+.bottle-ml { font-size: 12px; font-weight: 700; color: var(--green); }
+.bottle-price-mini { font-size: 11px; color: var(--text-muted); }
+
+/* ADVANTAGES */
+.advantages {
+  background: var(--green-dark);
+  padding: 60px 5vw;
+}
+.advantages-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+.adv-item { text-align: center; }
+.adv-icon {
+  width: 56px; height: 56px;
+  background: rgba(255,255,255,0.12);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin: 0 auto 14px;
+}
+.adv-title { color: #fff; font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+.adv-desc { color: rgba(255,255,255,0.65); font-size: 13px; line-height: 1.5; }
+
+/* SECTION HEADER */
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.section-tag {
+  display: inline-block;
+  background: var(--green-pale);
+  color: var(--green-dark);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 100px;
+  margin-bottom: 14px;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+.section-title {
+  font-family: 'Unbounded', sans-serif;
+  font-size: clamp(24px, 3vw, 38px);
+  font-weight: 900;
+  color: var(--text);
+  margin-bottom: 12px;
+  line-height: 1.15;
+}
+.section-subtitle {
+  color: var(--text-muted);
+  font-size: 16px;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+/* CATALOGUE */
+.catalogue {
+  padding: 80px 5vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* FILTER TABS */
+.filter-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.filter-tab {
+  background: #fff;
+  border: 2px solid var(--border);
+  color: var(--text-muted);
+  padding: 9px 22px;
+  border-radius: 100px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .2s;
+}
+.filter-tab:hover { border-color: var(--green); color: var(--green); }
+.filter-tab.active {
+  background: var(--green);
+  border-color: var(--green);
+  color: #fff;
+}
+
+/* PRODUCT GRID */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  transition: transform .25s, box-shadow .25s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.product-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity .5s ease, transform .5s ease, box-shadow .25s, border-color .2s;
+}
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--green);
+}
+.product-card.hidden { display: none; }
+
+.product-img {
+  background: linear-gradient(135deg, #f0f7f1 0%, #e8f5e9 100%);
+  padding: 28px 20px 16px;
+  text-align: center;
+  position: relative;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-img-emoji { font-size: 80px; line-height: 1; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.08)); }
+
+.product-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--green);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 100px;
+}
+
+.product-body {
+  padding: 16px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.product-volume {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.product-name {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.product-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+.spec-tag {
+  background: var(--green-pale);
+  color: var(--green-dark);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 6px;
+}
+.product-price-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+.product-price {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--green);
+}
+.product-price-unit {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+}
+.btn-add {
+  background: var(--green);
+  color: #fff;
+  border: none;
+  width: 38px; height: 38px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .2s, transform .15s;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+.btn-add:hover { background: var(--green-light); transform: scale(1.1); }
+
+/* ABOUT */
+.about {
+  background: var(--white);
+  padding: 80px 5vw;
+}
+.about-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.about-visual {
+  position: relative;
+}
+.about-main-card {
+  background: var(--green-pale);
+  border-radius: 24px;
+  padding: 40px;
+  text-align: center;
+}
+.about-main-icon { font-size: 80px; margin-bottom: 16px; }
+.about-main-text {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--green-dark);
+  line-height: 1.3;
+}
+.about-float-card {
+  position: absolute;
+  background: var(--white);
+  border-radius: 14px;
+  padding: 14px 18px;
+  box-shadow: var(--shadow-hover);
+  border: 1px solid var(--border);
+  font-size: 13px;
+  font-weight: 600;
+}
+.about-float-card.top-right {
+  top: -16px; right: -20px;
+  color: var(--green-dark);
+}
+.about-float-card .big-num {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--green);
+  display: block;
+}
+.about-float-card.bottom-left {
+  bottom: -16px; left: -20px;
+}
+
+.about-content h2 {
+  font-family: 'Unbounded', sans-serif;
+  font-size: clamp(22px, 2.5vw, 34px);
+  font-weight: 900;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.about-content p {
+  color: var(--text-muted);
+  font-size: 16px;
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+.about-points {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 28px;
+}
+.about-point {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+.about-point-icon {
+  width: 40px; height: 40px;
+  background: var(--green-pale);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.about-point-title { font-weight: 700; font-size: 14px; margin-bottom: 3px; }
+.about-point-desc { font-size: 13px; color: var(--text-muted); }
+
+/* HOW IT WORKS */
+.how {
+  padding: 80px 5vw;
+  background: var(--bg);
+}
+.how-inner { max-width: 1200px; margin: 0 auto; }
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  position: relative;
+}
+.step {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  border: 1px solid var(--border);
+  position: relative;
+  text-align: center;
+}
+.step-num {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--green-pale);
+  margin-bottom: 12px;
+  line-height: 1;
+}
+.step-icon { font-size: 28px; margin-bottom: 14px; }
+.step-title { font-weight: 700; font-size: 15px; margin-bottom: 8px; }
+.step-desc { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
+
+/* CONTACTS */
+.contacts {
+  background: var(--white);
+  padding: 80px 5vw;
+}
+.contacts-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+.contacts-info h2 {
+  font-family: 'Unbounded', sans-serif;
+  font-size: clamp(22px, 2.5vw, 34px);
+  font-weight: 900;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+.contacts-info > p {
+  color: var(--text-muted);
+  font-size: 16px;
+  margin-bottom: 36px;
+  line-height: 1.7;
+}
+.contact-items { display: flex; flex-direction: column; gap: 18px; }
+.contact-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.contact-icon {
+  width: 46px; height: 46px;
+  background: var(--green-pale);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.contact-label { font-size: 12px; color: var(--text-muted); margin-bottom: 2px; }
+.contact-value { font-weight: 700; font-size: 15px; color: var(--text); text-decoration: none; }
+.contact-value:hover { color: var(--green); }
+
+.contact-buttons { display: flex; flex-direction: column; gap: 14px; margin-top: 28px; }
+.btn-contact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 22px;
+  border-radius: 14px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform .2s, box-shadow .2s;
+  border: none;
+  cursor: pointer;
+}
+.btn-contact:hover { transform: translateY(-2px); box-shadow: var(--shadow-hover); }
+.btn-whatsapp { background: #25D366; color: #fff; }
+.btn-telegram { background: #229ED9; color: #fff; }
+.btn-call { background: var(--green); color: #fff; }
+.btn-contact-icon {
+  width: 32px; height: 32px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+/* Map block */
+.map-block {
+  background: var(--green-pale);
+  border-radius: 20px;
+  overflow: hidden;
+  height: 100%;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+}
+.map-header {
+  padding: 24px 28px;
+  background: var(--green);
+  color: #fff;
+}
+.map-header h3 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.map-header p { font-size: 13px; opacity: .8; }
+.map-body {
+  flex: 1;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.map-detail {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.map-detail-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+.map-detail-label { font-size: 12px; color: var(--text-muted); }
+.map-detail-val { font-size: 14px; font-weight: 600; color: var(--text); }
+.minorder-badge {
+  background: var(--green);
+  color: #fff;
+  border-radius: 12px;
+  padding: 14px 20px;
+  margin-top: auto;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: var(--green-dark);
+  color: rgba(255,255,255,0.7);
+  padding: 40px 5vw;
+}
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.footer-logo {
+  font-family: 'Unbounded', sans-serif;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+}
+.footer-copy { font-size: 13px; }
+.footer-links { display: flex; gap: 20px; }
+.footer-links a { color: rgba(255,255,255,0.6); font-size: 13px; text-decoration: none; transition: color .2s; }
+.footer-links a:hover { color: #fff; }
+
+/* BACK TO TOP */
+#backTop {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 48px; height: 48px;
+  background: var(--green);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-hover);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s, transform .2s;
+  z-index: 200;
+}
+#backTop.visible { opacity: 1; pointer-events: auto; }
+#backTop:hover { transform: translateY(-3px); }
+
+/* MOBILE NAV */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 68px;
+  left: 0; right: 0;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  padding: 20px 5vw;
+  gap: 16px;
+  z-index: 99;
+  box-shadow: var(--shadow);
+}
+.mobile-nav.open { display: flex; }
+.mobile-nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; gap: 40px; padding: 50px 5vw 40px; }
+  .hero-visual { order: -1; }
+  .hero-visual-bg { width: 300px; height: 300px; }
+  .advantages-inner { grid-template-columns: repeat(2, 1fr); }
+  .about-inner { grid-template-columns: 1fr; gap: 40px; }
+  .steps { grid-template-columns: repeat(2, 1fr); }
+  .contacts-inner { grid-template-columns: 1fr; gap: 40px; }
+  nav { display: none; }
+  .burger { display: flex; }
+  .footer-inner { flex-direction: column; text-align: center; }
+}
+@media (max-width: 580px) {
+  .product-grid { grid-template-columns: repeat(2, 1fr); }
+  .advantages-inner { grid-template-columns: 1fr 1fr; gap: 24px; }
+  .steps { grid-template-columns: 1fr; }
+  .hero-bottles-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .hero-stats { gap: 20px; }
+  .about-float-card { display: none; }
+}
+@media (max-width: 400px) {
+  .product-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/* FAQ */
+.faq {
+  padding: 80px 5vw;
+  background: var(--bg);
+}
+.faq-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 0;
+}
+.faq-item {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: border-color .2s, box-shadow .2s;
+}
+.faq-item:hover {
+  border-color: var(--green);
+  box-shadow: var(--shadow);
+}
+.faq-item.open {
+  border-color: var(--green);
+  box-shadow: var(--shadow);
+}
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 20px 24px;
+  text-align: left;
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  line-height: 1.4;
+}
+.faq-question:hover { color: var(--green); }
+.faq-item.open .faq-question { color: var(--green); }
+.faq-chevron {
+  width: 28px; height: 28px;
+  background: var(--green-pale);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 14px;
+  transition: transform .3s, background .2s;
+  color: var(--green);
+}
+.faq-item.open .faq-chevron {
+  transform: rotate(180deg);
+  background: var(--green);
+  color: #fff;
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .35s ease, padding .3s ease;
+  padding: 0 24px;
+}
+.faq-item.open .faq-answer {
+  max-height: 400px;
+  padding: 0 24px 20px;
+}
+.faq-answer p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+}
+.faq-cta {
+  margin-top: 36px;
+  background: var(--green-pale);
+  border-radius: var(--radius);
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.faq-cta-text h3 { font-size: 17px; font-weight: 700; margin-bottom: 4px; }
+.faq-cta-text p { font-size: 14px; color: var(--text-muted); }
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero-left > * {
+  animation: fadeSlideUp .7s ease both;
+}
+.hero-left > *:nth-child(2) { animation-delay: .1s; }
+.hero-left > *:nth-child(3) { animation-delay: .2s; }
+.hero-left > *:nth-child(4) { animation-delay: .3s; }
+.hero-left > *:nth-child(5) { animation-delay: .4s; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <div class="logo-icon">G</div>
+      <div>
+        <div class="logo-text">ПакТара KZ</div>
+        <div class="logo-sub">ПЭТ бутылки оптом · с 2018 года</div>
+      </div>
+    </a>
+    <nav>
+      <a href="#catalogue">Каталог</a>
+      <a href="#about">О нас</a>
+      <a href="#how">Как заказать</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a href="tel:+77006014090" class="header-cta">📞 Позвонить</a>
+    <div class="burger" onclick="toggleMenu()" id="burger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#catalogue" onclick="toggleMenu()">Каталог</a>
+  <a href="#about" onclick="toggleMenu()">О нас</a>
+  <a href="#how" onclick="toggleMenu()">Как заказать</a>
+  <a href="#faq" onclick="toggleMenu()">Вопросы</a>
+  <a href="#contacts" onclick="toggleMenu()">Контакты</a>
+  <a href="tel:+77006014090" class="btn-primary" style="margin-top:8px">📞 Позвонить</a>
+</div>
+
+<!-- HERO -->
+<section>
+  <div class="hero">
+    <div class="hero-left">
+      <div class="hero-badge">На рынке с 2018 года · Алматы</div>
+      <h1>ПЭТ бутылки<br>из <span>первичного</span><br>сырья оптом</h1>
+      <p>Производство и оптовые поставки ПЭТ тары любых объёмов. Горло 28 мм, 38 мм, 48 мм. Поставка <strong>на следующий день</strong> после заказа.</p>
+      <div class="hero-actions">
+        <a href="#catalogue" class="btn-primary">🧴 Смотреть каталог</a>
+        <a href="#contacts" class="btn-secondary">💬 Получить прайс</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num">300+</div>
+          <div class="stat-label">Моделей бутылок</div>
+        </div>
+        <div>
+          <div class="stat-num">7 лет</div>
+          <div class="stat-label">На рынке КЗ</div>
+        </div>
+        <div>
+          <div class="stat-num">от 40₸</div>
+          <div class="stat-label">Цена за штуку</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-visual-bg"></div>
+      <div class="hero-bottles-grid">
+        <div class="hero-bottle-card">
+          <div class="bottle-emoji">🧴</div>
+          <div class="bottle-ml">100 мл</div>
+          <div class="bottle-price-mini">от 40 ₸</div>
+        </div>
+        <div class="hero-bottle-card">
+          <div class="bottle-emoji">🫙</div>
+          <div class="bottle-ml">300 мл</div>
+          <div class="bottle-price-mini">от 45 ₸</div>
+        </div>
+        <div class="hero-bottle-card">
+          <div class="bottle-emoji">🍶</div>
+          <div class="bottle-ml">500 мл</div>
+          <div class="bottle-price-mini">от 48 ₸</div>
+        </div>
+        <div class="hero-bottle-card">
+          <div class="bottle-emoji">🧃</div>
+          <div class="bottle-ml">1 л</div>
+          <div class="bottle-price-mini">от 50 ₸</div>
+        </div>
+        <div class="hero-bottle-card">
+          <div class="bottle-emoji">🪣</div>
+          <div class="bottle-ml">3 л</div>
+          <div class="bottle-price-mini">под заказ</div>
+        </div>
+        <div class="hero-bottle-card">
+          <div class="bottle-emoji">🛢️</div>
+          <div class="bottle-ml">5 л</div>
+          <div class="bottle-price-mini">под заказ</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADVANTAGES STRIP -->
+<div class="advantages">
+  <div class="advantages-inner">
+    <div class="adv-item">
+      <div class="adv-icon">🏭</div>
+      <div class="adv-title">Собственное производство</div>
+      <div class="adv-desc">Первичное сырьё, никаких переработанных материалов</div>
+    </div>
+    <div class="adv-item">
+      <div class="adv-icon">⚡</div>
+      <div class="adv-title">Поставка на следующий день</div>
+      <div class="adv-desc">Любые объёмы — отгружаем на следующий день после оформления заказа</div>
+    </div>
+    <div class="adv-item">
+      <div class="adv-icon">🎨</div>
+      <div class="adv-title">Любые цвета и формы</div>
+      <div class="adv-desc">Прозрачные, белые, голубые, янтарные, чёрные</div>
+    </div>
+    <div class="adv-item">
+      <div class="adv-icon">🚚</div>
+      <div class="adv-title">Доставка по КЗ</div>
+      <div class="adv-desc">Алматы и Астана, отгрузка в регионы</div>
+    </div>
+  </div>
+</div>
+
+<!-- CATALOGUE -->
+<section id="catalogue">
+  <div class="catalogue">
+    <div class="section-header">
+      <div class="section-tag">Каталог</div>
+      <h2 class="section-title">Каталог ПЭТ бутылок</h2>
+      <p class="section-subtitle">Горло 38 мм, 28 мм и 48 мм. Все цены розничные — оптовые рассчитываются индивидуально.</p>
+    </div>
+
+    <div class="filter-tabs">
+      <button class="filter-tab active" onclick="filterCat('all', this)">Все товары</button>
+      <button class="filter-tab" onclick="filterCat('38', this)">Горло 38 мм</button>
+      <button class="filter-tab" onclick="filterCat('28', this)">Горло 28 мм</button>
+      <button class="filter-tab" onclick="filterCat('48', this)">Горло 48 мм</button>
+    </div>
+
+    <div class="product-grid" id="productGrid">
+
+      <!-- ГОРЛО 38 -->
+      <div class="product-card" data-cat="38">
+        <div class="product-img">
+          <div class="product-badge">Горло 38 мм</div>
+          <div class="product-img-emoji">🧴</div>
+        </div>
+        <div class="product-body">
+          <div class="product-volume">100 мл</div>
+          <div class="product-name">Квадратная · прозрачная</div>
+          <div class="product-specs">
+            <span class="spec-tag">В: 90 мм</span>
+            <span class="spec-tag">Ш: 45 мм</span>
+          </div>
+          <div class="product-price-row">
+            <div>
+              <div class="product-price">40 ₸</div>
+              <div class="product-price-unit">за штуку</div>
+            </div>
+            <a href="#contacts" class="btn-add" title="Заказать">+</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="38">
+        <div class="product-img">
+          <div class="product-badge">Горло 38 мм</div>
+          <div class="product-img-emoji">🫙</div>
+        </div>
+        <div class="product-body">
+          <div class="product-volume">200 мл</div>
+          <div class="product-name">Круглая · прозрачная, белая</div>
+          <div class="product-specs">
+            <span class="spec-tag">В: 150 мм</span>
+            <span class="spec-tag">Ш: 60 мм</span>
+          </div>
+          <div class="product-price-row">
+            <div>
+              <div class="product-price">45 ₸</div>
+              <div class="product-price-unit">за штуку</div>
+            </div>
+            <a href="#contacts" class="btn-add">+</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="38">
+        <div class="product-img">
+          <div class="product-badge">Горло 38 мм</div>
+          <div class="product-img-emoji">🍾</div>
+        </div>
+        <div class="product-body">
+          <div class="product-volume">300 мл</div>
+          <div class="product-name">Круглая · прозрачная, белая</div>
+          <div class="product-specs">
+            <span class="spec-tag">В: 150 мм</span>
+            <span class="spec-tag">Ш: 70 мм</span>
+          </div>
+          <div class="product-price-row">
+            <div>
+              <div class="product-price">45 ₸</div>
+              <div class="product-price-unit">за штуку</div>
+            </div>
+            <a href="#contacts" class="btn-add">+</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="38">
+        <div class="product-img">
+          <div class="product-badge">Горло 38 мм</div>
+          <div class="product-img-emoji">🧴</div>
+        </div>
+        <div class="product-body">
+          <div class="product-volume">300 мл</div>
+          <div class="product-name">Квадратная · прозрачная</div>
+          <div class="product-specs">
+            <span class="spec-tag">В: 180 мм</span>
+            <span class="spec-tag">Ш: 70 мм</span>
+          </div>
+          <div class="product-price-row">
+            <div>
+              <div class="product-price">45 ₸</div>
+              <div class="product-price-unit">за штуку</div>
+            </div>
+            <a href="#contacts" class="btn-add">+</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="38">
+        <div class="product-img">
+          <div class="product-badge">Горло 38 мм</div>
+          <div class="product-img-emoji">🫗</div>
+        </div>
+        <div class="product-body">
+          <div class="product-volume">500 мл</div>
+          <div class="product-name">Круглая · прозрачная</div>
+          <div class="product-specs">
+            <span class="spec-tag">В: 225 мм</span>
+            <span class="spec-tag">Ш: 75 мм</span>
+          </div>
+          <div class="product-price-row">
+            <div>
+              <div class="product-price">48 ₸</div>
+              <div class="product-price-unit">за штуку</div>
+            </div>
+            <a href="#contacts" class="btn-add">+</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="38">
+        <div class="product-img">
+          <div class="product-badge">Горло 38 мм</div>
+          <div class="product-img-emoji">🍶</div>
+        </div>
+        <div class="product-body">
+          <div class="product-volume">500 мл</div>
+          <div class="product-name">Круглая · белая (молочная)</div>
+          <div class="product-specs">
+            <span class="spec-tag">В: 225 мм</span>
+            <span class="spec-tag">Ш: 75 мм</span>
+          </div>
+          <div class="product-price-row">
+            <div>
+              <div class="product-price">48 ₸</div>
+              <div class="product-price-unit">за штуку</div>
+            </div>
+            <a href="#contacts" class="btn-add">+</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="38">
+        <div class="product-img">
+          <div class="product-badge">Горло 38 мм</div>
+          <div class="product-img-emoji">🧴</div>
+        </div>
+        <div class="product-body">
+          <div class="product-volume">500 мл</div>
+          <div class="product-name">Квадратная · прозрачная</div>
+          <div class="product-specs">
+            <span class="spec-tag">В: 190 мм</span>
+            <span class="spec-tag">Ш: 75 мм</span>
+          </div>
+          <div class="product-price-row">
+            <div>
+              <div class="product-price">48 ₸</div>
+              <div class="product-price-unit">за штуку</div>
+            </div>
+            <a href="#contacts" class="btn-add">+</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="38">
+        <div class="product-img">
+          <div class="product-badge">Горло 38 мм</div>
+          <div class="product-img-emoji">🪣</div>
+        </div>
+        <div class="product-body">
+          <div class="product-volume">1 л</div>
+          <div class="product-name">Квадратная · прозрачная, белая</div>
+          <div class="product-specs">
+            <span class="spec-tag">В: 220 мм</span>
+            <span class="spec-tag">Ш: 70 мм</span>
+          </div>
+          <div class="product-price-row">
+            <div>
+              <div class="product-price">50 ₸</div>
+              <div class="product-price-unit">за штуку</div>
+            </div>
+            <a href="#contacts" class="btn-add">+</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="38">
+        <div class="product-img">
+          <div class="product-badge">Горло 38 мм</div>
+          <div class="product-img-emoji">🍾</div>
+        </div>
+        <div class="product-body">
+          <div class="product-volume">1 л</div>
+          <div class="product-name">Круглая · прозрачная, белая</div>
+          <div class="product-specs">
+            <span class="spec-tag">В: 250 мм</span>
+            <span class="spec-tag">Ш: 80 мм</span>
+          </div>
+          <div class="product-price-row">
+            <div>
+              <div class="product-price">50 ₸</div>
+              <div class="product-price-unit">за штуку</div>
+            </div>
+            <a href="#contacts" class="btn-add">+</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ГОРЛО 28 -->
+      <div class="product-card" data-cat="28">
+        <div class="product-img">
+          <div class="product-badge" style="background:#0f766e">Горло 28 мм</div>
+          <div class="product-img-emoji">🫙</div>
+        </div>
+        <div class="product-body">
+          <div class="product-volume">270 мл</div>
+          <div class="product-name">Соус-бутылка · голубая / прозрачная</div>
+          <div class="product-specs">
+            <span class="spec-tag">В: 140 мм</span>
+            <span class="spec-tag">Ш: 65 мм</span>
+          </div>
+          <div class="product-price-row">
+            <div>
+              <div class="product-price">40 ₸</div>
+              <div class="product-price-unit">за штуку</div>
+            </div>
+            <a href="#contacts" class="btn-add" style="background:#0f766e">+</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="28">
+        <div class="product-img">
+          <div class="product-badge" style="background:#0f766e">Горло 28 мм</div>
+          <div class="product-img-emoji">🧴</div>
+        </div>
+        <div class="product-body">
+          <div class="product-volume">400 мл</div>
+          <div class="product-name">Под дозатор · голубая, белая, прозрачная</div>
+          <div class="product-specs">
+            <span class="spec-tag">В: 140 мм</span>
+            <span class="spec-tag">Ш: 70 мм</span>
+          </div>
+          <div class="product-price-row">
+            <div>
+              <div class="product-price">48 ₸</div>
+              <div class="product-price-unit">за штуку</div>
+            </div>
+            <a href="#contacts" class="btn-add" style="background:#0f766e">+</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="28">
+        <div class="product-img">
+          <div class="product-badge" style="background:#0f766e">Горло 28 мм</div>
+          <div class="product-img-emoji">🫗</div>
+        </div>
+        <div class="product-body">
+          <div class="product-volume">400 мл</div>
+          <div class="product-name">Под дозатор · белая, прозрачная, голубая</div>
+          <div class="product-specs">
+            <span class="spec-tag">В: 170 мм</span>
+            <span class="spec-tag">Ш: 60 мм</span>
+          </div>
+          <div class="product-price-row">
+            <div>
+              <div class="product-price">48 ₸</div>
+              <div class="product-price-unit">за штуку</div>
+            </div>
+            <a href="#contacts" class="btn-add" style="background:#0f766e">+</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="28">
+        <div class="product-img">
+          <div class="product-badge" style="background:#0f766e">Горло 28 мм</div>
+          <div class="product-img-emoji">🍾</div>
+        </div>
+        <div class="product-body">
+          <div class="product-volume">500 мл / 1 л</div>
+          <div class="product-name">Треугольная · прозрачная</div>
+          <div class="product-specs">
+            <span class="spec-tag">500 мл: В 240 мм</span>
+            <span class="spec-tag">1 л: В 270 мм</span>
+          </div>
+          <div class="product-price-row">
+            <div>
+              <div class="product-price">45 ₸</div>
+              <div class="product-price-unit">за штуку</div>
+            </div>
+            <a href="#contacts" class="btn-add" style="background:#0f766e">+</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="28">
+        <div class="product-img">
+          <div class="product-badge" style="background:#0f766e">Горло 28 мм</div>
+          <div class="product-img-emoji">🧴</div>
+        </div>
+        <div class="product-body">
+          <div class="product-volume">500 мл / 1 л</div>
+          <div class="product-name">Рёбристая · белая, прозрачная</div>
+          <div class="product-specs">
+            <span class="spec-tag">В: 280 мм</span>
+            <span class="spec-tag">Ш: 80 мм</span>
+          </div>
+          <div class="product-price-row">
+            <div>
+              <div class="product-price">45 ₸</div>
+              <div class="product-price-unit">за штуку</div>
+            </div>
+            <a href="#contacts" class="btn-add" style="background:#0f766e">+</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="28">
+        <div class="product-img">
+          <div class="product-badge" style="background:#0f766e">Горло 28 мм</div>
+          <div class="product-img-emoji">🍯</div>
+        </div>
+        <div class="product-body">
+          <div class="product-volume">900 мл</div>
+          <div class="product-name">Под дозатор · янтарная, прозрачная</div>
+          <div class="product-specs">
+            <span class="spec-tag">В: 230 мм</span>
+            <span class="spec-tag">Ш: 80 мм</span>
+          </div>
+          <div class="product-price-row">
+            <div>
+              <div class="product-price">50 ₸</div>
+              <div class="product-price-unit">за штуку</div>
+            </div>
+            <a href="#contacts" class="btn-add" style="background:#0f766e">+</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="28">
+        <div class="product-img">
+          <div class="product-badge" style="background:#0f766e">Горло 28 мм</div>
+          <div class="product-img-emoji">🍾</div>
+        </div>
+        <div class="product-body">
+          <div class="product-volume">1 л</div>
+          <div class="product-name">Гладкая · белая / прозрачная</div>
+          <div class="product-specs">
+            <span class="spec-tag">В: 280 мм</span>
+            <span class="spec-tag">Ш: 80 мм</span>
+          </div>
+          <div class="product-price-row">
+            <div>
+              <div class="product-price">45 ₸</div>
+              <div class="product-price-unit">за штуку</div>
+            </div>
+            <a href="#contacts" class="btn-add" style="background:#0f766e">+</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="28">
+        <div class="product-img">
+          <div class="product-badge" style="background:#0f766e">Горло 28 мм</div>
+          <div class="product-img-emoji">🪣</div>
+        </div>
+        <div class="product-body">
+          <div class="product-volume">1.5 л</div>
+          <div class="product-name">Рёбристая · прозрачная</div>
+          <div class="product-specs">
+            <span class="spec-tag">В: 300 мм</span>
+            <span class="spec-tag">Ш: 90 мм</span>
+          </div>
+          <div class="product-price-row">
+            <div>
+              <div class="product-price">50 ₸</div>
+              <div class="product-price-unit">за штуку</div>
+            </div>
+            <a href="#contacts" class="btn-add" style="background:#0f766e">+</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="28">
+        <div class="product-img">
+          <div class="product-badge" style="background:#0f766e">Горло 28 мм</div>
+          <div class="product-img-emoji">🛢️</div>
+        </div>
+        <div class="product-body">
+          <div class="product-volume">2 л</div>
+          <div class="product-name">Рёбристая · прозрачная</div>
+          <div class="product-specs">
+            <span class="spec-tag">В: 320 мм</span>
+            <span class="spec-tag">Ш: 100 мм</span>
+          </div>
+          <div class="product-price-row">
+            <div>
+              <div class="product-price">50 ₸</div>
+              <div class="product-price-unit">за штуку</div>
+            </div>
+            <a href="#contacts" class="btn-add" style="background:#0f766e">+</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ГОРЛО 48 -->
+      <div class="product-card" data-cat="48">
+        <div class="product-img">
+          <div class="product-badge" style="background:#7c3aed">Горло 48 мм</div>
+          <div class="product-img-emoji">🪣</div>
+        </div>
+        <div class="product-body">
+          <div class="product-volume">3 л</div>
+          <div class="product-name">Квадратная · прозрачная</div>
+          <div class="product-specs">
+            <span class="spec-tag">В: 260 мм</span>
+            <span class="spec-tag">Ш: 136 мм</span>
+          </div>
+          <div class="product-price-row">
+            <div>
+              <div class="product-price">Под запрос</div>
+              <div class="product-price-unit">индивидуально</div>
+            </div>
+            <a href="#contacts" class="btn-add" style="background:#7c3aed">+</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="48">
+        <div class="product-img">
+          <div class="product-badge" style="background:#7c3aed">Горло 48 мм</div>
+          <div class="product-img-emoji">🛢️</div>
+        </div>
+        <div class="product-body">
+          <div class="product-volume">5 л</div>
+          <div class="product-name">Квадратная · прозрачная</div>
+          <div class="product-specs">
+            <span class="spec-tag">В: 300 мм</span>
+            <span class="spec-tag">Ш: 155 мм</span>
+          </div>
+          <div class="product-price-row">
+            <div>
+              <div class="product-price">Под запрос</div>
+              <div class="product-price-unit">индивидуально</div>
+            </div>
+            <a href="#contacts" class="btn-add" style="background:#7c3aed">+</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /product-grid -->
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about">
+    <div class="about-inner">
+      <div class="about-visual">
+        <div class="about-main-card">
+          <div class="about-main-icon">🏭</div>
+          <div class="about-main-text">Производство<br>ПЭТ тары<br>в Казахстане</div>
+        </div>
+        <div class="about-float-card top-right">
+          <span class="big-num">2018</span>
+          Год основания
+        </div>
+        <div class="about-float-card bottom-left">
+          <span class="big-num">300+</span>
+          Моделей в наличии
+        </div>
+      </div>
+      <div class="about-content">
+        <div class="section-tag">О компании</div>
+        <h2>ПакТара KZ — казахстанский производитель ПЭТ тары</h2>
+        <p>С 2018 года мы производим и поставляем ПЭТ бутылки из первичного сырья для предприятий пищевой, косметической и химической промышленности по всему Казахстану.</p>
+        <p>Каждый заказ рассчитывается индивидуально. Минимальный объём поставки — от 300 штук. Работаем с ИП и юридическими лицами, выставляем документы.</p>
+        <div class="about-points">
+          <div class="about-point">
+            <div class="about-point-icon">✅</div>
+            <div>
+              <div class="about-point-title">Первичное сырьё</div>
+              <div class="about-point-desc">Используем только первичный ПЭТ — без переработки и примесей</div>
+            </div>
+          </div>
+          <div class="about-point">
+            <div class="about-point-icon">🎯</div>
+            <div>
+              <div class="about-point-title">Широкий выбор формата</div>
+              <div class="about-point-desc">Горло 28, 38, 48 мм — разные объёмы, формы и цвета</div>
+            </div>
+          </div>
+          <div class="about-point">
+            <div class="about-point-icon">📋</div>
+            <div>
+              <div class="about-point-title">Официальная документация</div>
+              <div class="about-point-desc">Работаем по договору, выставляем счета и накладные</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="how">
+    <div class="how-inner">
+      <div class="section-header">
+        <div class="section-tag">Процесс</div>
+        <h2 class="section-title">Как сделать заказ</h2>
+        <p class="section-subtitle">Всего 4 простых шага — от выбора до получения</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-icon">📋</div>
+          <div class="step-title">Выберите модель</div>
+          <div class="step-desc">Изучите каталог, выберите объём, форму и цвет бутылки</div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-icon">💬</div>
+          <div class="step-title">Свяжитесь с нами</div>
+          <div class="step-desc">Позвоните или напишите в WhatsApp — расчитаем стоимость и сроки</div>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-icon">✅</div>
+          <div class="step-title">Подтвердите заказ</div>
+          <div class="step-desc">Согласуем детали, подпишем договор, произведём оплату</div>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div class="step-icon">🚚</div>
+          <div class="step-title">Получите товар</div>
+          <div class="step-desc">Доставим в Алматы, Астану или отправим в любой регион КЗ</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section id="contacts">
+  <div class="contacts">
+    <div class="contacts-inner">
+      <div class="contacts-info">
+        <div class="section-tag">Контакты</div>
+        <h2>Свяжитесь с нами<br>удобным способом</h2>
+        <p>Готовы ответить на все вопросы, рассчитать стоимость и оформить заказ. Минимальная партия от 300 штук.</p>
+
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-label">Адрес</div>
+              <div class="contact-value">г. Алматы, пр. Райымбека, 496 а</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div class="contact-label">Алматы</div>
+              <a href="tel:+77006014090" class="contact-value">+7 700 601 40 90</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div>
+              <div class="contact-label">Астана</div>
+              <a href="tel:+77076014090" class="contact-value">+7 707 601 40 90</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🌐</div>
+            <div>
+              <div class="contact-label">Сайт</div>
+              <a href="https://www.globalplast.kz" class="contact-value" target="_blank">www.globalplast.kz</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div>
+              <div class="contact-label">Email</div>
+              <a href="mailto:info@globalplast.kz" class="contact-value">info@globalplast.kz</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-buttons">
+          <a href="https://wa.me/77006014090" class="btn-contact btn-whatsapp" target="_blank">
+            <span class="btn-contact-icon">💬</span>
+            Написать в WhatsApp
+          </a>
+          <a href="https://t.me/globalplastkz" class="btn-contact btn-telegram" target="_blank">
+            <span class="btn-contact-icon">✈️</span>
+            Написать в Telegram
+          </a>
+          <a href="tel:+77006014090" class="btn-contact btn-call">
+            <span class="btn-contact-icon">📞</span>
+            Позвонить сейчас
+          </a>
+        </div>
+      </div>
+
+      <div class="map-block">
+        <div class="map-header">
+          <h3>ПакТара KZ</h3>
+          <p>Производство и склад в Алматы</p>
+        </div>
+        <div class="map-body">
+          <div class="map-detail">
+            <div class="map-detail-icon">🕒</div>
+            <div>
+              <div class="map-detail-label">Режим работы</div>
+              <div class="map-detail-val">Пн–Пт: 9:00 – 18:00</div>
+            </div>
+          </div>
+          <div class="map-detail">
+            <div class="map-detail-icon">📦</div>
+            <div>
+              <div class="map-detail-label">Минимальный заказ</div>
+              <div class="map-detail-val">от 300 штук</div>
+            </div>
+          </div>
+          <div class="map-detail">
+            <div class="map-detail-icon">🚚</div>
+            <div>
+              <div class="map-detail-label">Доставка</div>
+              <div class="map-detail-val">По Алматы и Казахстану</div>
+            </div>
+          </div>
+          <div class="map-detail">
+            <div class="map-detail-icon">💳</div>
+            <div>
+              <div class="map-detail-label">Оплата</div>
+              <div class="map-detail-val">Наличные, перевод, счёт (юр. лицам)</div>
+            </div>
+          </div>
+          <div class="map-detail">
+            <div class="map-detail-icon">🎨</div>
+            <div>
+              <div class="map-detail-label">Индивидуальный заказ</div>
+              <div class="map-detail-val">Нестандартный цвет или объём — по запросу</div>
+            </div>
+          </div>
+          <div class="minorder-badge">
+            📋 Каждый заказ рассчитывается индивидуально
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="faq">
+    <div class="faq-inner">
+      <div class="section-header">
+        <div class="section-tag">FAQ</div>
+        <h2 class="section-title">Часто задаваемые вопросы</h2>
+        <p class="section-subtitle">Ответы на самые популярные вопросы наших клиентов</p>
+      </div>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Какой минимальный объём заказа?
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>Минимальный объём поставки — от 300 штук на одну позицию. Для крупных партий предусмотрены специальные оптовые цены. Каждый заказ рассчитывается индивидуально — свяжитесь с нами, и мы подберём оптимальные условия.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Когда я получу товар после оформления заказа?
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>Мы гарантируем поставку любых объёмов <strong>на следующий день</strong> после подтверждения и оплаты заказа. Доставка по Алматы — в течение дня. По Казахстану — срок зависит от региона, уточняйте у менеджера.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Какие диаметры горлышка доступны?
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>В нашем ассортименте три стандарта горлышка: <strong>28 мм</strong> — для воды, соусов, дозаторов; <strong>38 мм</strong> — универсальное, для соков, молочных продуктов, косметики; <strong>48 мм</strong> — широкое, для канистр объёмом 3 и 5 литров. Если нужен нестандартный размер — уточняйте, возможен заказ под производство.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Можно ли заказать бутылки нестандартного цвета?
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>Да. В стандартном ассортименте представлены прозрачные, белые, голубые, янтарные и чёрные бутылки. Нестандартные цвета изготавливаются под заказ — уточняйте минимальный тираж и сроки у менеджера.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Из какого сырья производятся бутылки?
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>Мы используем исключительно <strong>первичный ПЭТ-гранулят</strong> без добавления вторичного сырья. Это гарантирует высокую прозрачность, отсутствие запаха, соответствие пищевым стандартам безопасности.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Работаете ли вы с юридическими лицами и ИП?
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>Да, работаем с физическими лицами, ИП и ТОО. Для юридических лиц заключаем договор поставки, выставляем счёт, накладную и акт. Также можем работать через ЭСФ.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Доставляете ли вы в регионы Казахстана?
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>Да. У нас есть офисы в Алматы и Астане. Для других городов осуществляем отправку через транспортные компании (КазПочта, DHL, CDEK и др.) или договариваемся об удобной логистике индивидуально.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFaq(this)">
+            Как рассчитывается цена на оптовый заказ?
+            <span class="faq-chevron">▾</span>
+          </button>
+          <div class="faq-answer">
+            <p>Розничные цены указаны в каталоге. Оптовая стоимость рассчитывается индивидуально — зависит от модели, объёма тиража и условий доставки. Чем больше заказ, тем ниже цена за единицу. Напишите нам в WhatsApp или позвоните, и мы подготовим персональный прайс в течение 30 минут.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="faq-cta">
+        <div class="faq-cta-text">
+          <h3>Не нашли ответ на свой вопрос?</h3>
+          <p>Напишите нам — ответим в течение 30 минут</p>
+        </div>
+        <a href="https://wa.me/77006014090" class="btn-primary" target="_blank">💬 Написать в WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section id="form">
+  <div style="background:var(--green-dark);padding:80px 5vw;">
+    <div style="max-width:640px;margin:0 auto;">
+      <div class="section-header" style="margin-bottom:36px;">
+        <div class="section-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Заявка</div>
+        <h2 class="section-title" style="color:#fff;">Оставьте заявку</h2>
+        <p class="section-subtitle" style="color:rgba(255,255,255,0.65);">Заполните форму — мы свяжемся с вами в WhatsApp в течение 30 минут</p>
+      </div>
+
+      <div style="background:#fff;border-radius:20px;padding:36px 32px;">
+        <div style="display:flex;flex-direction:column;gap:18px;">
+
+          <div class="form-group">
+            <label class="form-label">Ваше имя *</label>
+            <input class="form-input" type="text" id="f-name" placeholder="Например: Алибек">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Номер телефона *</label>
+            <input class="form-input" type="tel" id="f-phone" placeholder="+7 ___ ___ __ __">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Какой товар интересует?</label>
+            <select class="form-input" id="f-product">
+              <option value="">— Выберите категорию —</option>
+              <option>Горло 38 мм — 100 мл (квадратная)</option>
+              <option>Горло 38 мм — 200 мл (круглая)</option>
+              <option>Горло 38 мм — 300 мл (круглая)</option>
+              <option>Горло 38 мм — 300 мл (квадратная)</option>
+              <option>Горло 38 мм — 500 мл (круглая)</option>
+              <option>Горло 38 мм — 500 мл (квадратная)</option>
+              <option>Горло 38 мм — 1 л (круглая)</option>
+              <option>Горло 38 мм — 1 л (квадратная)</option>
+              <option>Горло 28 мм — 270 мл (соус)</option>
+              <option>Горло 28 мм — 400 мл (под дозатор)</option>
+              <option>Горло 28 мм — 500 мл / 1 л (треугольная)</option>
+              <option>Горло 28 мм — 900 мл (янтарная)</option>
+              <option>Горло 28 мм — 1 л (гладкая)</option>
+              <option>Горло 28 мм — 1.5 л (рёбристая)</option>
+              <option>Горло 28 мм — 2 л (рёбристая)</option>
+              <option>Горло 48 мм — 3 л (квадратная)</option>
+              <option>Горло 48 мм — 5 л (квадратная)</option>
+              <option>Другое / несколько позиций</option>
+            </select>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+            <div class="form-group">
+              <label class="form-label">Количество (шт.)</label>
+              <input class="form-input" type="number" id="f-qty" placeholder="от 300">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Город доставки</label>
+              <input class="form-input" type="text" id="f-city" placeholder="Алматы">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Комментарий</label>
+            <textarea class="form-input" id="f-comment" rows="3" placeholder="Уточните цвет, нужна ли крышка, дополнительные пожелания..."></textarea>
+          </div>
+
+          <div id="form-error" style="display:none;background:#fef2f2;border:1px solid #fca5a5;border-radius:10px;padding:12px 16px;font-size:13px;color:#dc2626;font-weight:600;"></div>
+
+          <button onclick="sendToWhatsapp()" class="btn-primary" style="width:100%;justify-content:center;padding:16px;font-size:16px;border-radius:14px;">
+            💬 Отправить заявку в WhatsApp
+          </button>
+
+          <p style="font-size:12px;color:var(--text-muted);text-align:center;line-height:1.6;">
+            Нажимая кнопку, вы переходите в WhatsApp с готовым сообщением.<br>Ваши данные не сохраняются на сервере.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.form-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.form-input {
+  width: 100%;
+  padding: 13px 16px;
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  color: var(--text);
+  background: var(--bg);
+  outline: none;
+  transition: border-color .2s, box-shadow .2s;
+  resize: vertical;
+}
+.form-input:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 3px rgba(45,122,58,0.12);
+  background: #fff;
+}
+.form-input::placeholder { color: #b0b7c0; }
+select.form-input { cursor: pointer; }
+@media (max-width: 580px) {
+  #form .form-grid { grid-template-columns: 1fr !important; }
+  #form > div > div { padding: 24px 18px !important; }
+}
+</style>
+
+<script>
+function sendToWhatsapp() {
+  const name    = document.getElementById('f-name').value.trim();
+  const phone   = document.getElementById('f-phone').value.trim();
+  const product = document.getElementById('f-product').value;
+  const qty     = document.getElementById('f-qty').value.trim();
+  const city    = document.getElementById('f-city').value.trim();
+  const comment = document.getElementById('f-comment').value.trim();
+  const errBox  = document.getElementById('form-error');
+
+  if (!name || !phone) {
+    errBox.textContent = 'Пожалуйста, заполните имя и номер телефона.';
+    errBox.style.display = 'block';
+    return;
+  }
+  errBox.style.display = 'none';
+
+  let msg = '👋 Здравствуйте! Хочу оставить заявку.\n\n';
+  msg += '👤 *Имя:* ' + name + '\n';
+  msg += '📞 *Телефон:* ' + phone + '\n';
+  if (product) msg += '🧴 *Товар:* ' + product + '\n';
+  if (qty)     msg += '📦 *Количество:* ' + qty + ' шт.\n';
+  if (city)    msg += '🚚 *Город:* ' + city + '\n';
+  if (comment) msg += '💬 *Комментарий:* ' + comment + '\n';
+  msg += '\nОжидаю вашего ответа 🙏';
+
+  const encoded = encodeURIComponent(msg);
+  window.open('https://wa.me/77770051551?text=' + encoded, '_blank');
+}
+</script>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <a href="#" class="footer-logo">ПакТара KZ</a>
+    <div class="footer-copy">© 2026 · ПЭТ бутылки оптом · Алматы</div>
+    <div class="footer-links">
+      <a href="#catalogue">Каталог</a>
+      <a href="#about">О нас</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contacts">Контакты</a>
+    </div>
+  </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<button id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Наверх">↑</button>
+
+<script>
+// Scroll-triggered card animations
+const cards = document.querySelectorAll('.product-card');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 60);
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.1 });
+cards.forEach(c => io.observe(c));
+
+// Back to top
+const backBtn = document.getElementById('backTop');
+window.addEventListener('scroll', () => {
+  backBtn.classList.toggle('visible', window.scrollY > 400);
+});
+
+// Mobile menu
+function toggleMenu() {
+  document.getElementById('mobileNav').classList.toggle('open');
+}
+
+// FAQ accordion
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+function filterCat(cat, btn) {
+  document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.product-card').forEach(card => {
+    if (cat === 'all' || card.dataset.cat === cat) {
+      card.classList.remove('hidden');
+    } else {
+      card.classList.add('hidden');
+    }
+  });
+}
+</script>
+</body>
+</html>
