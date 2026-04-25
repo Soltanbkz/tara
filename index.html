@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ПакТара KZ — ПЭТ бутылки оптом в Алматы</title>
+<title>QazPack — ПЭТ бутылки оптом в Алматы</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Unbounded:wght@400;700;900&display=swap" rel="stylesheet">
@@ -25,890 +25,382 @@
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-
 html { scroll-behavior: smooth; }
-
-body {
-  font-family: 'Manrope', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
-  overflow-x: hidden;
-}
+body { font-family: 'Manrope', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; overflow-x: hidden; }
 
 /* HEADER */
-header {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: rgba(255,255,255,0.95);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
-  padding: 0 5vw;
-}
-.header-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 68px;
-  gap: 24px;
-}
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-}
-.logo-icon {
-  width: 38px;
-  height: 38px;
-  background: var(--green);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Unbounded', sans-serif;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 900;
-  letter-spacing: -1px;
-}
-.logo-text {
-  font-family: 'Unbounded', sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--text);
-  line-height: 1.2;
-}
-.logo-sub {
-  font-size: 10px;
-  font-weight: 400;
-  color: var(--text-muted);
-  font-family: 'Manrope', sans-serif;
-}
+header { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 0 5vw; }
+.header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 68px; gap: 24px; }
+.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.logo-icon { width: 38px; height: 38px; background: var(--green); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-family: 'Unbounded', sans-serif; color: #fff; font-size: 18px; font-weight: 900; letter-spacing: -1px; }
+.logo-text { font-family: 'Unbounded', sans-serif; font-size: 14px; font-weight: 700; color: var(--text); line-height: 1.2; }
+.logo-sub { font-size: 10px; font-weight: 400; color: var(--text-muted); font-family: 'Manrope', sans-serif; }
 nav { display: flex; gap: 28px; }
-nav a {
-  text-decoration: none;
-  color: var(--text-muted);
-  font-size: 14px;
-  font-weight: 500;
-  transition: color .2s;
-}
+nav a { text-decoration: none; color: var(--text-muted); font-size: 14px; font-weight: 500; transition: color .2s; }
 nav a:hover { color: var(--green); }
-.header-cta {
-  background: var(--green);
-  color: #fff;
-  border: none;
-  padding: 10px 22px;
-  border-radius: 10px;
-  font-family: 'Manrope', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: background .2s, transform .15s;
-}
+.header-cta { background: var(--green); color: #fff; border: none; padding: 10px 22px; border-radius: 10px; font-family: 'Manrope', sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; text-decoration: none; white-space: nowrap; transition: background .2s, transform .15s; }
 .header-cta:hover { background: var(--green-light); transform: translateY(-1px); }
 .burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
 .burger span { width: 22px; height: 2px; background: var(--text); border-radius: 2px; transition: .3s; }
 
 /* HERO */
-.hero {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 80px 5vw 60px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
-}
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--green-pale);
-  color: var(--green-dark);
-  font-size: 13px;
-  font-weight: 600;
-  padding: 6px 14px;
-  border-radius: 100px;
-  margin-bottom: 20px;
-}
-.hero-badge::before {
-  content: '';
-  width: 8px; height: 8px;
-  background: var(--green);
-  border-radius: 50%;
-}
-.hero h1 {
-  font-family: 'Unbounded', sans-serif;
-  font-size: clamp(30px, 4vw, 52px);
-  font-weight: 900;
-  line-height: 1.1;
-  color: var(--text);
-  margin-bottom: 20px;
-}
+.hero { max-width: 1200px; margin: 0 auto; padding: 80px 5vw 60px; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.hero-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--green-pale); color: var(--green-dark); font-size: 13px; font-weight: 600; padding: 6px 14px; border-radius: 100px; margin-bottom: 20px; }
+.hero-badge::before { content: ''; width: 8px; height: 8px; background: var(--green); border-radius: 50%; }
+.hero h1 { font-family: 'Unbounded', sans-serif; font-size: clamp(30px, 4vw, 52px); font-weight: 900; line-height: 1.1; color: var(--text); margin-bottom: 20px; }
 .hero h1 span { color: var(--green); }
-.hero p {
-  font-size: 17px;
-  color: var(--text-muted);
-  margin-bottom: 36px;
-  line-height: 1.7;
-  max-width: 480px;
-}
+.hero p { font-size: 17px; color: var(--text-muted); margin-bottom: 36px; line-height: 1.7; max-width: 480px; }
 .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
-.btn-primary {
-  background: var(--green);
-  color: #fff;
-  border: none;
-  padding: 15px 32px;
-  border-radius: 12px;
-  font-family: 'Manrope', sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background .2s, transform .15s, box-shadow .2s;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
+.btn-primary { background: var(--green); color: #fff; border: none; padding: 15px 32px; border-radius: 12px; font-family: 'Manrope', sans-serif; font-size: 15px; font-weight: 700; cursor: pointer; text-decoration: none; transition: background .2s, transform .15s, box-shadow .2s; display: inline-flex; align-items: center; gap: 8px; }
 .btn-primary:hover { background: var(--green-light); transform: translateY(-2px); box-shadow: var(--shadow-hover); }
-.btn-secondary {
-  background: transparent;
-  color: var(--green);
-  border: 2px solid var(--green);
-  padding: 13px 28px;
-  border-radius: 12px;
-  font-family: 'Manrope', sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background .2s, color .2s;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-}
+.btn-secondary { background: transparent; color: var(--green); border: 2px solid var(--green); padding: 13px 28px; border-radius: 12px; font-family: 'Manrope', sans-serif; font-size: 15px; font-weight: 700; cursor: pointer; text-decoration: none; transition: background .2s, color .2s; display: inline-flex; align-items: center; gap: 8px; }
 .btn-secondary:hover { background: var(--green-pale); }
-.hero-stats {
-  display: flex;
-  gap: 36px;
-  margin-top: 44px;
-  padding-top: 36px;
-  border-top: 1px solid var(--border);
-}
-.stat-num {
-  font-family: 'Unbounded', sans-serif;
-  font-size: 28px;
-  font-weight: 900;
-  color: var(--green);
-}
+.hero-stats { display: flex; gap: 36px; margin-top: 44px; padding-top: 36px; border-top: 1px solid var(--border); }
+.stat-num { font-family: 'Unbounded', sans-serif; font-size: 28px; font-weight: 900; color: var(--green); }
 .stat-label { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
-
-.hero-visual {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.hero-visual-bg {
-  position: absolute;
-  width: 420px;
-  height: 420px;
-  background: radial-gradient(circle, var(--green-pale) 0%, transparent 70%);
-  border-radius: 50%;
-}
-.hero-bottles-grid {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  padding: 20px;
-}
-.hero-bottle-card {
-  background: #fff;
-  border-radius: 14px;
-  padding: 20px 14px 14px;
-  text-align: center;
-  box-shadow: var(--shadow);
-  border: 1px solid var(--border);
-  transition: transform .2s, box-shadow .2s;
-}
+.hero-visual { position: relative; display: flex; align-items: center; justify-content: center; }
+.hero-visual-bg { position: absolute; width: 420px; height: 420px; background: radial-gradient(circle, var(--green-pale) 0%, transparent 70%); border-radius: 50%; }
+.hero-bottles-grid { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding: 20px; }
+.hero-bottle-card { background: #fff; border-radius: 14px; padding: 20px 14px 14px; text-align: center; box-shadow: var(--shadow); border: 1px solid var(--border); transition: transform .2s, box-shadow .2s; }
 .hero-bottle-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
 .bottle-emoji { font-size: 42px; margin-bottom: 8px; line-height: 1; }
 .bottle-ml { font-size: 12px; font-weight: 700; color: var(--green); }
 .bottle-price-mini { font-size: 11px; color: var(--text-muted); }
 
 /* ADVANTAGES */
-.advantages {
-  background: var(--green-dark);
-  padding: 60px 5vw;
-}
-.advantages-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-}
+.advantages { background: var(--green-dark); padding: 60px 5vw; }
+.advantages-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; }
 .adv-item { text-align: center; }
-.adv-icon {
-  width: 56px; height: 56px;
-  background: rgba(255,255,255,0.12);
-  border-radius: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  margin: 0 auto 14px;
-}
+.adv-icon { width: 56px; height: 56px; background: rgba(255,255,255,0.12); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 24px; margin: 0 auto 14px; }
 .adv-title { color: #fff; font-size: 15px; font-weight: 700; margin-bottom: 6px; }
 .adv-desc { color: rgba(255,255,255,0.65); font-size: 13px; line-height: 1.5; }
 
 /* SECTION HEADER */
-.section-header {
-  text-align: center;
-  margin-bottom: 48px;
-}
-.section-tag {
-  display: inline-block;
-  background: var(--green-pale);
-  color: var(--green-dark);
-  font-size: 12px;
-  font-weight: 700;
-  padding: 5px 14px;
-  border-radius: 100px;
-  margin-bottom: 14px;
-  letter-spacing: .05em;
-  text-transform: uppercase;
-}
-.section-title {
-  font-family: 'Unbounded', sans-serif;
-  font-size: clamp(24px, 3vw, 38px);
-  font-weight: 900;
-  color: var(--text);
-  margin-bottom: 12px;
-  line-height: 1.15;
-}
-.section-subtitle {
-  color: var(--text-muted);
-  font-size: 16px;
-  max-width: 540px;
-  margin: 0 auto;
-}
+.section-header { text-align: center; margin-bottom: 48px; }
+.section-tag { display: inline-block; background: var(--green-pale); color: var(--green-dark); font-size: 12px; font-weight: 700; padding: 5px 14px; border-radius: 100px; margin-bottom: 14px; letter-spacing: .05em; text-transform: uppercase; }
+.section-title { font-family: 'Unbounded', sans-serif; font-size: clamp(24px, 3vw, 38px); font-weight: 900; color: var(--text); margin-bottom: 12px; line-height: 1.15; }
+.section-subtitle { color: var(--text-muted); font-size: 16px; max-width: 540px; margin: 0 auto; }
 
 /* CATALOGUE */
-.catalogue {
-  padding: 80px 5vw;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* FILTER TABS */
-.filter-tabs {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 36px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.filter-tab {
-  background: #fff;
-  border: 2px solid var(--border);
-  color: var(--text-muted);
-  padding: 9px 22px;
-  border-radius: 100px;
-  font-family: 'Manrope', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all .2s;
-}
+.catalogue { padding: 80px 5vw; max-width: 1200px; margin: 0 auto; }
+.filter-tabs { display: flex; gap: 10px; margin-bottom: 36px; flex-wrap: wrap; justify-content: center; }
+.filter-tab { background: #fff; border: 2px solid var(--border); color: var(--text-muted); padding: 9px 22px; border-radius: 100px; font-family: 'Manrope', sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; transition: all .2s; }
 .filter-tab:hover { border-color: var(--green); color: var(--green); }
-.filter-tab.active {
-  background: var(--green);
-  border-color: var(--green);
-  color: #fff;
-}
+.filter-tab.active { background: var(--green); border-color: var(--green); color: #fff; }
 
 /* PRODUCT GRID */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-.product-card {
-  background: var(--card-bg);
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  overflow: hidden;
-  transition: transform .25s, box-shadow .25s;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  opacity: 0;
-  transform: translateY(20px);
-}
-.product-card.visible {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity .5s ease, transform .5s ease, box-shadow .25s, border-color .2s;
-}
-.product-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-hover);
-  border-color: var(--green);
-}
+.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+.product-card { background: var(--card-bg); border-radius: var(--radius); border: 1px solid var(--border); overflow: hidden; transition: transform .25s, box-shadow .25s; cursor: pointer; display: flex; flex-direction: column; opacity: 0; transform: translateY(20px); }
+.product-card.visible { opacity: 1; transform: translateY(0); transition: opacity .5s ease, transform .5s ease, box-shadow .25s, border-color .2s; }
+.product-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); border-color: var(--green); }
 .product-card.hidden { display: none; }
-
-.product-img {
-  background: linear-gradient(135deg, #f0f7f1 0%, #e8f5e9 100%);
-  padding: 28px 20px 16px;
-  text-align: center;
-  position: relative;
-  min-height: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+.product-card.catalogue-hidden { display: none; }
+.product-img { background: linear-gradient(135deg, #f0f7f1 0%, #e8f5e9 100%); padding: 28px 20px 16px; text-align: center; position: relative; min-height: 180px; display: flex; align-items: center; justify-content: center; }
 .product-img-emoji { font-size: 80px; line-height: 1; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.08)); }
-
-.product-badge {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  background: var(--green);
-  color: #fff;
-  font-size: 11px;
-  font-weight: 700;
-  padding: 4px 10px;
-  border-radius: 100px;
-}
-
-.product-body {
-  padding: 16px 18px 20px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-.product-volume {
-  font-family: 'Unbounded', sans-serif;
-  font-size: 18px;
-  font-weight: 900;
-  color: var(--text);
-  margin-bottom: 4px;
-}
-.product-name {
-  font-size: 13px;
-  color: var(--text-muted);
-  margin-bottom: 10px;
-  line-height: 1.4;
-}
-.product-specs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-bottom: 14px;
-}
-.spec-tag {
-  background: var(--green-pale);
-  color: var(--green-dark);
-  font-size: 11px;
-  font-weight: 600;
-  padding: 3px 9px;
-  border-radius: 6px;
-}
-.product-price-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: auto;
-  padding-top: 14px;
-  border-top: 1px solid var(--border);
-}
-.product-price {
-  font-family: 'Unbounded', sans-serif;
-  font-size: 22px;
-  font-weight: 900;
-  color: var(--green);
-}
-.product-price-unit {
-  font-size: 12px;
-  color: var(--text-muted);
-  font-family: 'Manrope', sans-serif;
-  font-weight: 500;
-}
-.btn-add {
-  background: var(--green);
-  color: #fff;
-  border: none;
-  width: 38px; height: 38px;
-  border-radius: 10px;
-  font-size: 20px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background .2s, transform .15s;
-  flex-shrink: 0;
-  text-decoration: none;
-}
+.product-badge { position: absolute; top: 12px; left: 12px; background: var(--green); color: #fff; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 100px; }
+.product-body { padding: 16px 18px 20px; display: flex; flex-direction: column; flex: 1; }
+.product-volume { font-family: 'Unbounded', sans-serif; font-size: 18px; font-weight: 900; color: var(--text); margin-bottom: 4px; }
+.product-name { font-size: 13px; color: var(--text-muted); margin-bottom: 10px; line-height: 1.4; }
+.product-specs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.spec-tag { background: var(--green-pale); color: var(--green-dark); font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 6px; }
+.product-price-row { display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 14px; border-top: 1px solid var(--border); }
+.product-price { font-family: 'Unbounded', sans-serif; font-size: 22px; font-weight: 900; color: var(--green); }
+.product-price-unit { font-size: 12px; color: var(--text-muted); font-family: 'Manrope', sans-serif; font-weight: 500; }
+.btn-add { background: var(--green); color: #fff; border: none; width: 38px; height: 38px; border-radius: 10px; font-size: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background .2s, transform .15s; flex-shrink: 0; text-decoration: none; }
 .btn-add:hover { background: var(--green-light); transform: scale(1.1); }
 
 /* ABOUT */
-.about {
-  background: var(--white);
-  padding: 80px 5vw;
-}
-.about-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: center;
-}
-.about-visual {
-  position: relative;
-}
-.about-main-card {
-  background: var(--green-pale);
-  border-radius: 24px;
-  padding: 40px;
-  text-align: center;
-}
+.about { background: var(--white); padding: 80px 5vw; }
+.about-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+.about-visual { position: relative; }
+.about-main-card { background: var(--green-pale); border-radius: 24px; padding: 40px; text-align: center; }
 .about-main-icon { font-size: 80px; margin-bottom: 16px; }
-.about-main-text {
-  font-family: 'Unbounded', sans-serif;
-  font-size: 20px;
-  font-weight: 900;
-  color: var(--green-dark);
-  line-height: 1.3;
-}
-.about-float-card {
-  position: absolute;
-  background: var(--white);
-  border-radius: 14px;
-  padding: 14px 18px;
-  box-shadow: var(--shadow-hover);
-  border: 1px solid var(--border);
-  font-size: 13px;
-  font-weight: 600;
-}
-.about-float-card.top-right {
-  top: -16px; right: -20px;
-  color: var(--green-dark);
-}
-.about-float-card .big-num {
-  font-family: 'Unbounded', sans-serif;
-  font-size: 26px;
-  font-weight: 900;
-  color: var(--green);
-  display: block;
-}
-.about-float-card.bottom-left {
-  bottom: -16px; left: -20px;
-}
-
-.about-content h2 {
-  font-family: 'Unbounded', sans-serif;
-  font-size: clamp(22px, 2.5vw, 34px);
-  font-weight: 900;
-  margin-bottom: 20px;
-  line-height: 1.2;
-}
-.about-content p {
-  color: var(--text-muted);
-  font-size: 16px;
-  line-height: 1.75;
-  margin-bottom: 20px;
-}
-.about-points {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  margin-top: 28px;
-}
-.about-point {
-  display: flex;
-  gap: 14px;
-  align-items: flex-start;
-}
-.about-point-icon {
-  width: 40px; height: 40px;
-  background: var(--green-pale);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  flex-shrink: 0;
-}
+.about-main-text { font-family: 'Unbounded', sans-serif; font-size: 20px; font-weight: 900; color: var(--green-dark); line-height: 1.3; }
+.about-float-card { position: absolute; background: var(--white); border-radius: 14px; padding: 14px 18px; box-shadow: var(--shadow-hover); border: 1px solid var(--border); font-size: 13px; font-weight: 600; }
+.about-float-card.top-right { top: -16px; right: -20px; color: var(--green-dark); }
+.about-float-card .big-num { font-family: 'Unbounded', sans-serif; font-size: 26px; font-weight: 900; color: var(--green); display: block; }
+.about-float-card.bottom-left { bottom: -16px; left: -20px; }
+.about-content h2 { font-family: 'Unbounded', sans-serif; font-size: clamp(22px, 2.5vw, 34px); font-weight: 900; margin-bottom: 20px; line-height: 1.2; }
+.about-content p { color: var(--text-muted); font-size: 16px; line-height: 1.75; margin-bottom: 20px; }
+.about-points { display: flex; flex-direction: column; gap: 14px; margin-top: 28px; }
+.about-point { display: flex; gap: 14px; align-items: flex-start; }
+.about-point-icon { width: 40px; height: 40px; background: var(--green-pale); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
 .about-point-title { font-weight: 700; font-size: 14px; margin-bottom: 3px; }
 .about-point-desc { font-size: 13px; color: var(--text-muted); }
 
 /* HOW IT WORKS */
-.how {
-  padding: 80px 5vw;
-  background: var(--bg);
-}
+.how { padding: 80px 5vw; background: var(--bg); }
 .how-inner { max-width: 1200px; margin: 0 auto; }
-.steps {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  position: relative;
-}
-.step {
-  background: #fff;
-  border-radius: var(--radius);
-  padding: 28px 24px;
-  border: 1px solid var(--border);
-  position: relative;
-  text-align: center;
-}
-.step-num {
-  font-family: 'Unbounded', sans-serif;
-  font-size: 40px;
-  font-weight: 900;
-  color: var(--green-pale);
-  margin-bottom: 12px;
-  line-height: 1;
-}
+.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; position: relative; }
+.step { background: #fff; border-radius: var(--radius); padding: 28px 24px; border: 1px solid var(--border); position: relative; text-align: center; }
+.step-num { font-family: 'Unbounded', sans-serif; font-size: 40px; font-weight: 900; color: var(--green-pale); margin-bottom: 12px; line-height: 1; }
 .step-icon { font-size: 28px; margin-bottom: 14px; }
 .step-title { font-weight: 700; font-size: 15px; margin-bottom: 8px; }
 .step-desc { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
 
 /* CONTACTS */
-.contacts {
-  background: var(--white);
-  padding: 80px 5vw;
-}
-.contacts-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: start;
-}
-.contacts-info h2 {
-  font-family: 'Unbounded', sans-serif;
-  font-size: clamp(22px, 2.5vw, 34px);
-  font-weight: 900;
-  margin-bottom: 16px;
-  line-height: 1.2;
-}
-.contacts-info > p {
-  color: var(--text-muted);
-  font-size: 16px;
-  margin-bottom: 36px;
-  line-height: 1.7;
-}
+.contacts { background: var(--white); padding: 80px 5vw; }
+.contacts-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+.contacts-info h2 { font-family: 'Unbounded', sans-serif; font-size: clamp(22px, 2.5vw, 34px); font-weight: 900; margin-bottom: 16px; line-height: 1.2; }
+.contacts-info > p { color: var(--text-muted); font-size: 16px; margin-bottom: 36px; line-height: 1.7; }
 .contact-items { display: flex; flex-direction: column; gap: 18px; }
-.contact-item {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-}
-.contact-icon {
-  width: 46px; height: 46px;
-  background: var(--green-pale);
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  flex-shrink: 0;
-}
+.contact-item { display: flex; gap: 16px; align-items: flex-start; }
+.contact-icon { width: 46px; height: 46px; background: var(--green-pale); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
 .contact-label { font-size: 12px; color: var(--text-muted); margin-bottom: 2px; }
 .contact-value { font-weight: 700; font-size: 15px; color: var(--text); text-decoration: none; }
 .contact-value:hover { color: var(--green); }
-
 .contact-buttons { display: flex; flex-direction: column; gap: 14px; margin-top: 28px; }
-.btn-contact {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 15px 22px;
-  border-radius: 14px;
-  font-family: 'Manrope', sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  text-decoration: none;
-  transition: transform .2s, box-shadow .2s;
-  border: none;
-  cursor: pointer;
-}
+.btn-contact { display: flex; align-items: center; gap: 12px; padding: 15px 22px; border-radius: 14px; font-family: 'Manrope', sans-serif; font-size: 15px; font-weight: 700; text-decoration: none; transition: transform .2s, box-shadow .2s; border: none; cursor: pointer; }
 .btn-contact:hover { transform: translateY(-2px); box-shadow: var(--shadow-hover); }
 .btn-whatsapp { background: #25D366; color: #fff; }
 .btn-telegram { background: #229ED9; color: #fff; }
 .btn-call { background: var(--green); color: #fff; }
-.btn-contact-icon {
-  width: 32px; height: 32px;
-  background: rgba(255,255,255,0.25);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  flex-shrink: 0;
-}
+.btn-contact-icon { width: 32px; height: 32px; background: rgba(255,255,255,0.25); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; }
 
 /* Map block */
-.map-block {
-  background: var(--green-pale);
-  border-radius: 20px;
-  overflow: hidden;
-  height: 100%;
-  min-height: 380px;
-  display: flex;
-  flex-direction: column;
-}
-.map-header {
-  padding: 24px 28px;
-  background: var(--green);
-  color: #fff;
-}
+.map-block { background: var(--green-pale); border-radius: 20px; overflow: hidden; height: 100%; min-height: 380px; display: flex; flex-direction: column; }
+.map-header { padding: 24px 28px; background: var(--green); color: #fff; }
 .map-header h3 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
 .map-header p { font-size: 13px; opacity: .8; }
-.map-body {
-  flex: 1;
-  padding: 28px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.map-detail {
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-}
+.map-body { flex: 1; padding: 28px; display: flex; flex-direction: column; gap: 16px; }
+.map-detail { display: flex; gap: 12px; align-items: flex-start; }
 .map-detail-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
 .map-detail-label { font-size: 12px; color: var(--text-muted); }
 .map-detail-val { font-size: 14px; font-weight: 600; color: var(--text); }
-.minorder-badge {
-  background: var(--green);
-  color: #fff;
-  border-radius: 12px;
-  padding: 14px 20px;
-  margin-top: auto;
-  font-size: 14px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+.minorder-badge { background: var(--green); color: #fff; border-radius: 12px; padding: 14px 20px; margin-top: auto; font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 10px; }
 
 /* FOOTER */
-footer {
-  background: var(--green-dark);
-  color: rgba(255,255,255,0.7);
-  padding: 40px 5vw;
-}
-.footer-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.footer-logo {
-  font-family: 'Unbounded', sans-serif;
-  color: #fff;
-  font-weight: 700;
-  font-size: 15px;
-  text-decoration: none;
-}
+footer { background: var(--green-dark); color: rgba(255,255,255,0.7); padding: 40px 5vw; }
+.footer-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+.footer-logo { font-family: 'Unbounded', sans-serif; color: #fff; font-weight: 700; font-size: 15px; text-decoration: none; }
 .footer-copy { font-size: 13px; }
 .footer-links { display: flex; gap: 20px; }
 .footer-links a { color: rgba(255,255,255,0.6); font-size: 13px; text-decoration: none; transition: color .2s; }
 .footer-links a:hover { color: #fff; }
 
 /* BACK TO TOP */
-#backTop {
-  position: fixed;
-  bottom: 28px;
-  right: 28px;
-  width: 48px; height: 48px;
-  background: var(--green);
-  color: #fff;
-  border: none;
-  border-radius: 14px;
-  font-size: 20px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: var(--shadow-hover);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity .3s, transform .2s;
-  z-index: 200;
-}
+#backTop { position: fixed; bottom: 28px; right: 28px; width: 48px; height: 48px; background: var(--green); color: #fff; border: none; border-radius: 14px; font-size: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: var(--shadow-hover); opacity: 0; pointer-events: none; transition: opacity .3s, transform .2s; z-index: 200; }
 #backTop.visible { opacity: 1; pointer-events: auto; }
 #backTop:hover { transform: translateY(-3px); }
 
 /* MOBILE NAV */
-.mobile-nav {
-  display: none;
-  flex-direction: column;
-  position: fixed;
-  top: 68px;
-  left: 0; right: 0;
-  background: #fff;
-  border-bottom: 1px solid var(--border);
-  padding: 20px 5vw;
-  gap: 16px;
-  z-index: 99;
-  box-shadow: var(--shadow);
-}
+.mobile-nav { display: none; flex-direction: column; position: fixed; top: 68px; left: 0; right: 0; background: #fff; border-bottom: 1px solid var(--border); padding: 20px 5vw; gap: 16px; z-index: 99; box-shadow: var(--shadow); }
 .mobile-nav.open { display: flex; }
-.mobile-nav a {
-  text-decoration: none;
+.mobile-nav a { text-decoration: none; color: var(--text); font-size: 15px; font-weight: 600; padding: 10px 0; border-bottom: 1px solid var(--border); }
+
+/* FAQ */
+.faq { padding: 80px 5vw; background: var(--bg); }
+.faq-inner { max-width: 800px; margin: 0 auto; }
+.faq-list { display: flex; flex-direction: column; gap: 12px; margin-top: 0; }
+.faq-item { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; transition: border-color .2s, box-shadow .2s; }
+.faq-item:hover { border-color: var(--green); box-shadow: var(--shadow); }
+.faq-item.open { border-color: var(--green); box-shadow: var(--shadow); }
+.faq-question { width: 100%; background: none; border: none; padding: 20px 24px; text-align: left; font-family: 'Manrope', sans-serif; font-size: 15px; font-weight: 700; color: var(--text); cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; line-height: 1.4; }
+.faq-question:hover { color: var(--green); }
+.faq-item.open .faq-question { color: var(--green); }
+.faq-chevron { width: 28px; height: 28px; background: var(--green-pale); border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 14px; transition: transform .3s, background .2s; color: var(--green); }
+.faq-item.open .faq-chevron { transform: rotate(180deg); background: var(--green); color: #fff; }
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height .35s ease, padding .3s ease; padding: 0 24px; }
+.faq-item.open .faq-answer { max-height: 400px; padding: 0 24px 20px; }
+.faq-answer p { font-size: 14px; color: var(--text-muted); line-height: 1.75; border-top: 1px solid var(--border); padding-top: 16px; }
+.faq-cta { margin-top: 36px; background: var(--green-pale); border-radius: var(--radius); padding: 28px 32px; display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+.faq-cta-text h3 { font-size: 17px; font-weight: 700; margin-bottom: 4px; }
+.faq-cta-text p { font-size: 14px; color: var(--text-muted); }
+
+/* FORM SECTION */
+.form-label { display: block; font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+.form-input { width: 100%; padding: 13px 16px; border: 1.5px solid var(--border); border-radius: 12px; font-family: 'Manrope', sans-serif; font-size: 14px; color: var(--text); background: var(--bg); outline: none; transition: border-color .2s, box-shadow .2s; resize: vertical; }
+.form-input:focus { border-color: var(--green); box-shadow: 0 0 0 3px rgba(45,122,58,0.12); background: #fff; }
+.form-input::placeholder { color: #b0b7c0; }
+select.form-input { cursor: pointer; }
+
+/* ===================== */
+/* POPUP MODAL           */
+/* ===================== */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.popup-overlay.active {
+  display: flex;
+}
+.popup-box {
+  background: #fff;
+  border-radius: 24px;
+  padding: 40px 36px 36px;
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+  box-shadow: 0 20px 80px rgba(0,0,0,0.25);
+  animation: popupIn .3s ease;
+}
+@keyframes popupIn {
+  from { opacity: 0; transform: scale(0.92) translateY(20px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+.popup-close {
+  position: absolute;
+  top: 16px; right: 16px;
+  width: 36px; height: 36px;
+  background: var(--bg);
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-muted);
+  transition: background .2s, color .2s;
+}
+.popup-close:hover { background: #fee2e2; color: #dc2626; }
+.popup-icon { font-size: 48px; text-align: center; margin-bottom: 12px; }
+.popup-title {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
   color: var(--text);
-  font-size: 15px;
+  text-align: center;
+  margin-bottom: 6px;
+  line-height: 1.25;
+}
+.popup-subtitle {
+  font-size: 14px;
+  color: var(--text-muted);
+  text-align: center;
+  margin-bottom: 28px;
+  line-height: 1.5;
+}
+.popup-fields { display: flex; flex-direction: column; gap: 16px; }
+.popup-error {
+  display: none;
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #dc2626;
   font-weight: 600;
-  padding: 10px 0;
-  border-bottom: 1px solid var(--border);
+}
+.popup-success {
+  display: none;
+  text-align: center;
+  padding: 20px 0 10px;
+}
+.popup-success .success-icon { font-size: 52px; margin-bottom: 14px; }
+.popup-success h3 { font-family: 'Unbounded', sans-serif; font-size: 18px; font-weight: 900; color: var(--green); margin-bottom: 8px; }
+.popup-success p { font-size: 14px; color: var(--text-muted); line-height: 1.6; }
+.popup-note {
+  font-size: 11px;
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: 12px;
+  line-height: 1.5;
 }
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  .hero { grid-template-columns: 1fr; gap: 40px; padding: 50px 5vw 40px; }
-  .hero-visual { order: -1; }
-  .hero-visual-bg { width: 300px; height: 300px; }
-  .advantages-inner { grid-template-columns: repeat(2, 1fr); }
-  .about-inner { grid-template-columns: 1fr; gap: 40px; }
-  .steps { grid-template-columns: repeat(2, 1fr); }
-  .contacts-inner { grid-template-columns: 1fr; gap: 40px; }
-  nav { display: none; }
-  .burger { display: flex; }
-  .footer-inner { flex-direction: column; text-align: center; }
-}
-@media (max-width: 580px) {
-  .product-grid { grid-template-columns: repeat(2, 1fr); }
-  .advantages-inner { grid-template-columns: 1fr 1fr; gap: 24px; }
-  .steps { grid-template-columns: 1fr; }
-  .hero-bottles-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
-  .hero-stats { gap: 20px; }
-  .about-float-card { display: none; }
-}
-@media (max-width: 400px) {
-  .product-grid { grid-template-columns: 1fr 1fr; }
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 50px 5vw 40px;
+  }
+
+  /* 👇 МЕНЯЕМ МЕСТАМИ БЛОКИ */
+  .hero-visual {
+    grid-row: 2;
+  }
+
+  .hero-left {
+    grid-row: 1;
+  }
+
+  .hero-visual-bg {
+    width: 300px;
+    height: 300px;
+  }
+
+  .advantages-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contacts-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
-/* FAQ */
-.faq {
-  padding: 80px 5vw;
-  background: var(--bg);
+@media (max-width: 580px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .advantages-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-bottles-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .hero-stats {
+    gap: 20px;
+  }
+
+  .about-float-card {
+    display: none;
+  }
+
+  .popup-box {
+    padding: 32px 22px 28px;
+  }
 }
-.faq-inner {
-  max-width: 800px;
-  margin: 0 auto;
+
+@media (max-width: 400px) {
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
-.faq-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 0;
-}
-.faq-item {
-  background: var(--white);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  transition: border-color .2s, box-shadow .2s;
-}
-.faq-item:hover {
-  border-color: var(--green);
-  box-shadow: var(--shadow);
-}
-.faq-item.open {
-  border-color: var(--green);
-  box-shadow: var(--shadow);
-}
-.faq-question {
-  width: 100%;
-  background: none;
-  border: none;
-  padding: 20px 24px;
-  text-align: left;
-  font-family: 'Manrope', sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--text);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  line-height: 1.4;
-}
-.faq-question:hover { color: var(--green); }
-.faq-item.open .faq-question { color: var(--green); }
-.faq-chevron {
-  width: 28px; height: 28px;
-  background: var(--green-pale);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  font-size: 14px;
-  transition: transform .3s, background .2s;
-  color: var(--green);
-}
-.faq-item.open .faq-chevron {
-  transform: rotate(180deg);
-  background: var(--green);
-  color: #fff;
-}
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height .35s ease, padding .3s ease;
-  padding: 0 24px;
-}
-.faq-item.open .faq-answer {
-  max-height: 400px;
-  padding: 0 24px 20px;
-}
-.faq-answer p {
-  font-size: 14px;
-  color: var(--text-muted);
-  line-height: 1.75;
-  border-top: 1px solid var(--border);
-  padding-top: 16px;
-}
-.faq-cta {
-  margin-top: 36px;
-  background: var(--green-pale);
-  border-radius: var(--radius);
-  padding: 28px 32px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.faq-cta-text h3 { font-size: 17px; font-weight: 700; margin-bottom: 4px; }
-.faq-cta-text p { font-size: 14px; color: var(--text-muted); }
 
 @keyframes fadeSlideUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
-.hero-left > * {
-  animation: fadeSlideUp .7s ease both;
-}
+.hero-left > * { animation: fadeSlideUp .7s ease both; }
 .hero-left > *:nth-child(2) { animation-delay: .1s; }
 .hero-left > *:nth-child(3) { animation-delay: .2s; }
 .hero-left > *:nth-child(4) { animation-delay: .3s; }
@@ -917,13 +409,50 @@ footer {
 </head>
 <body>
 
+<!-- ======================== -->
+<!-- POPUP MODAL              -->
+<!-- ======================== -->
+<div class="popup-overlay" id="popupOverlay" onclick="closePopupOnOverlay(event)">
+  <div class="popup-box">
+    <button class="popup-close" onclick="closePopup()">✕</button>
+
+    <div id="popupFormView">
+      <div class="popup-icon">🧴</div>
+      <div class="popup-title">Получить прайс</div>
+      <div class="popup-subtitle">Оставьте контакты — пришлём прайс и ответим в течение 30 минут</div>
+
+      <div class="popup-fields">
+        <div>
+          <label class="form-label">Ваше имя *</label>
+          <input class="form-input" type="text" id="p-name" placeholder="Например: Алибек">
+        </div>
+        <div>
+          <label class="form-label">Номер телефона *</label>
+          <input class="form-input" type="tel" id="p-phone" placeholder="+7 777 005 15 51">
+        </div>
+        <div id="popup-error" class="popup-error"></div>
+        <button onclick="sendPopupToTelegram()" class="btn-primary" style="width:100%;justify-content:center;padding:15px;font-size:15px;">
+          📩 Отправить заявку
+        </button>
+        <p class="popup-note">Мы свяжемся с вами в WhatsApp или по телефону</p>
+      </div>
+    </div>
+
+    <div id="popupSuccessView" class="popup-success">
+      <div class="success-icon">✅</div>
+      <h3>Заявка отправлена!</h3>
+      <p>Мы получили вашу заявку и свяжемся с вами в течение 30 минут.</p>
+    </div>
+  </div>
+</div>
+
 <!-- HEADER -->
 <header>
   <div class="header-inner">
     <a href="#" class="logo">
-      <div class="logo-icon">G</div>
+      <div class="logo-icon">QP</div>
       <div>
-        <div class="logo-text">ПакТара KZ</div>
+        <div class="logo-text">QazPack</div>
         <div class="logo-sub">ПЭТ бутылки оптом · с 2018 года</div>
       </div>
     </a>
@@ -934,7 +463,7 @@ footer {
       <a href="#faq">Вопросы</a>
       <a href="#contacts">Контакты</a>
     </nav>
-    <a href="tel:+77006014090" class="header-cta">📞 Позвонить</a>
+    <a href="tel:+77770051551" class="header-cta">📞 Позвонить</a>
     <div class="burger" onclick="toggleMenu()" id="burger">
       <span></span><span></span><span></span>
     </div>
@@ -947,7 +476,7 @@ footer {
   <a href="#how" onclick="toggleMenu()">Как заказать</a>
   <a href="#faq" onclick="toggleMenu()">Вопросы</a>
   <a href="#contacts" onclick="toggleMenu()">Контакты</a>
-  <a href="tel:+77006014090" class="btn-primary" style="margin-top:8px">📞 Позвонить</a>
+  <a href="tel:+77770051551" class="btn-primary" style="margin-top:8px">📞 Позвонить</a>
 </div>
 
 <!-- HERO -->
@@ -959,7 +488,7 @@ footer {
       <p>Производство и оптовые поставки ПЭТ тары любых объёмов. Горло 28 мм, 38 мм, 48 мм. Поставка <strong>на следующий день</strong> после заказа.</p>
       <div class="hero-actions">
         <a href="#catalogue" class="btn-primary">🧴 Смотреть каталог</a>
-        <a href="#contacts" class="btn-secondary">💬 Получить прайс</a>
+        <button onclick="openPopup()" class="btn-secondary">💬 Получить прайс</button>
       </div>
       <div class="hero-stats">
         <div>
@@ -1076,7 +605,7 @@ footer {
               <div class="product-price">40 ₸</div>
               <div class="product-price-unit">за штуку</div>
             </div>
-            <a href="#contacts" class="btn-add" title="Заказать">+</a>
+            <button onclick="openPopup()" class="btn-add" title="Заказать">+</button>
           </div>
         </div>
       </div>
@@ -1098,7 +627,7 @@ footer {
               <div class="product-price">45 ₸</div>
               <div class="product-price-unit">за штуку</div>
             </div>
-            <a href="#contacts" class="btn-add">+</a>
+            <button onclick="openPopup()" class="btn-add">+</button>
           </div>
         </div>
       </div>
@@ -1120,7 +649,7 @@ footer {
               <div class="product-price">45 ₸</div>
               <div class="product-price-unit">за штуку</div>
             </div>
-            <a href="#contacts" class="btn-add">+</a>
+            <button onclick="openPopup()" class="btn-add">+</button>
           </div>
         </div>
       </div>
@@ -1142,7 +671,7 @@ footer {
               <div class="product-price">45 ₸</div>
               <div class="product-price-unit">за штуку</div>
             </div>
-            <a href="#contacts" class="btn-add">+</a>
+            <button onclick="openPopup()" class="btn-add">+</button>
           </div>
         </div>
       </div>
@@ -1164,7 +693,7 @@ footer {
               <div class="product-price">48 ₸</div>
               <div class="product-price-unit">за штуку</div>
             </div>
-            <a href="#contacts" class="btn-add">+</a>
+            <button onclick="openPopup()" class="btn-add">+</button>
           </div>
         </div>
       </div>
@@ -1186,7 +715,7 @@ footer {
               <div class="product-price">48 ₸</div>
               <div class="product-price-unit">за штуку</div>
             </div>
-            <a href="#contacts" class="btn-add">+</a>
+            <button onclick="openPopup()" class="btn-add">+</button>
           </div>
         </div>
       </div>
@@ -1208,7 +737,7 @@ footer {
               <div class="product-price">48 ₸</div>
               <div class="product-price-unit">за штуку</div>
             </div>
-            <a href="#contacts" class="btn-add">+</a>
+            <button onclick="openPopup()" class="btn-add">+</button>
           </div>
         </div>
       </div>
@@ -1230,7 +759,7 @@ footer {
               <div class="product-price">50 ₸</div>
               <div class="product-price-unit">за штуку</div>
             </div>
-            <a href="#contacts" class="btn-add">+</a>
+            <button onclick="openPopup()" class="btn-add">+</button>
           </div>
         </div>
       </div>
@@ -1252,7 +781,7 @@ footer {
               <div class="product-price">50 ₸</div>
               <div class="product-price-unit">за штуку</div>
             </div>
-            <a href="#contacts" class="btn-add">+</a>
+            <button onclick="openPopup()" class="btn-add">+</button>
           </div>
         </div>
       </div>
@@ -1275,7 +804,7 @@ footer {
               <div class="product-price">40 ₸</div>
               <div class="product-price-unit">за штуку</div>
             </div>
-            <a href="#contacts" class="btn-add" style="background:#0f766e">+</a>
+            <button onclick="openPopup()" class="btn-add" style="background:#0f766e">+</button>
           </div>
         </div>
       </div>
@@ -1297,7 +826,7 @@ footer {
               <div class="product-price">48 ₸</div>
               <div class="product-price-unit">за штуку</div>
             </div>
-            <a href="#contacts" class="btn-add" style="background:#0f766e">+</a>
+            <button onclick="openPopup()" class="btn-add" style="background:#0f766e">+</button>
           </div>
         </div>
       </div>
@@ -1319,7 +848,7 @@ footer {
               <div class="product-price">48 ₸</div>
               <div class="product-price-unit">за штуку</div>
             </div>
-            <a href="#contacts" class="btn-add" style="background:#0f766e">+</a>
+            <button onclick="openPopup()" class="btn-add" style="background:#0f766e">+</button>
           </div>
         </div>
       </div>
@@ -1341,7 +870,7 @@ footer {
               <div class="product-price">45 ₸</div>
               <div class="product-price-unit">за штуку</div>
             </div>
-            <a href="#contacts" class="btn-add" style="background:#0f766e">+</a>
+            <button onclick="openPopup()" class="btn-add" style="background:#0f766e">+</button>
           </div>
         </div>
       </div>
@@ -1363,7 +892,7 @@ footer {
               <div class="product-price">45 ₸</div>
               <div class="product-price-unit">за штуку</div>
             </div>
-            <a href="#contacts" class="btn-add" style="background:#0f766e">+</a>
+            <button onclick="openPopup()" class="btn-add" style="background:#0f766e">+</button>
           </div>
         </div>
       </div>
@@ -1385,7 +914,7 @@ footer {
               <div class="product-price">50 ₸</div>
               <div class="product-price-unit">за штуку</div>
             </div>
-            <a href="#contacts" class="btn-add" style="background:#0f766e">+</a>
+            <button onclick="openPopup()" class="btn-add" style="background:#0f766e">+</button>
           </div>
         </div>
       </div>
@@ -1407,7 +936,7 @@ footer {
               <div class="product-price">45 ₸</div>
               <div class="product-price-unit">за штуку</div>
             </div>
-            <a href="#contacts" class="btn-add" style="background:#0f766e">+</a>
+            <button onclick="openPopup()" class="btn-add" style="background:#0f766e">+</button>
           </div>
         </div>
       </div>
@@ -1429,7 +958,7 @@ footer {
               <div class="product-price">50 ₸</div>
               <div class="product-price-unit">за штуку</div>
             </div>
-            <a href="#contacts" class="btn-add" style="background:#0f766e">+</a>
+            <button onclick="openPopup()" class="btn-add" style="background:#0f766e">+</button>
           </div>
         </div>
       </div>
@@ -1451,7 +980,7 @@ footer {
               <div class="product-price">50 ₸</div>
               <div class="product-price-unit">за штуку</div>
             </div>
-            <a href="#contacts" class="btn-add" style="background:#0f766e">+</a>
+            <button onclick="openPopup()" class="btn-add" style="background:#0f766e">+</button>
           </div>
         </div>
       </div>
@@ -1474,7 +1003,7 @@ footer {
               <div class="product-price">Под запрос</div>
               <div class="product-price-unit">индивидуально</div>
             </div>
-            <a href="#contacts" class="btn-add" style="background:#7c3aed">+</a>
+            <button onclick="openPopup()" class="btn-add" style="background:#7c3aed">+</button>
           </div>
         </div>
       </div>
@@ -1496,12 +1025,20 @@ footer {
               <div class="product-price">Под запрос</div>
               <div class="product-price-unit">индивидуально</div>
             </div>
-            <a href="#contacts" class="btn-add" style="background:#7c3aed">+</a>
+            <button onclick="openPopup()" class="btn-add" style="background:#7c3aed">+</button>
           </div>
         </div>
       </div>
 
     </div><!-- /product-grid -->
+
+    <!-- SHOW MORE BUTTON -->
+    <div id="showMoreWrap" style="text-align:center;margin-top:32px;">
+      <button id="showMoreBtn" onclick="toggleShowMore()" class="btn-secondary" style="padding:14px 36px;font-size:15px;gap:10px;">
+        <span id="showMoreIcon">▼</span> <span id="showMoreText">Показать все товары</span>
+      </button>
+      <div style="font-size:13px;color:var(--text-muted);margin-top:10px;" id="showMoreHint">Показано 3 ряда из всего каталога</div>
+    </div>
   </div>
 </section>
 
@@ -1525,7 +1062,7 @@ footer {
       </div>
       <div class="about-content">
         <div class="section-tag">О компании</div>
-        <h2>ПакТара KZ — казахстанский производитель ПЭТ тары</h2>
+        <h2>QazPack — казахстанский производитель ПЭТ тары</h2>
         <p>С 2018 года мы производим и поставляем ПЭТ бутылки из первичного сырья для предприятий пищевой, косметической и химической промышленности по всему Казахстану.</p>
         <p>Каждый заказ рассчитывается индивидуально. Минимальный объём поставки — от 300 штук. Работаем с ИП и юридическими лицами, выставляем документы.</p>
         <div class="about-points">
@@ -1616,14 +1153,14 @@ footer {
             <div class="contact-icon">📞</div>
             <div>
               <div class="contact-label">Алматы</div>
-              <a href="tel:+77006014090" class="contact-value">+7 700 601 40 90</a>
+              <a href="tel:+77770051551" class="contact-value">+7 777 005 15 51</a>
             </div>
           </div>
           <div class="contact-item">
             <div class="contact-icon">📞</div>
             <div>
               <div class="contact-label">Астана</div>
-              <a href="tel:+77076014090" class="contact-value">+7 707 601 40 90</a>
+              <a href="tel:+77770051551" class="contact-value">+7 777 005 15 51</a>
             </div>
           </div>
           <div class="contact-item">
@@ -1643,7 +1180,7 @@ footer {
         </div>
 
         <div class="contact-buttons">
-          <a href="https://wa.me/77006014090" class="btn-contact btn-whatsapp" target="_blank">
+          <a href="https://wa.me/77770051551" class="btn-contact btn-whatsapp" target="_blank">
             <span class="btn-contact-icon">💬</span>
             Написать в WhatsApp
           </a>
@@ -1651,16 +1188,16 @@ footer {
             <span class="btn-contact-icon">✈️</span>
             Написать в Telegram
           </a>
-          <a href="tel:+77006014090" class="btn-contact btn-call">
+          <button onclick="openPopup()" class="btn-contact btn-call">
             <span class="btn-contact-icon">📞</span>
-            Позвонить сейчас
-          </a>
+            Оставить заявку
+          </button>
         </div>
       </div>
 
       <div class="map-block">
         <div class="map-header">
-          <h3>ПакТара KZ</h3>
+          <h3>QazPack</h3>
           <p>Производство и склад в Алматы</p>
         </div>
         <div class="map-body">
@@ -1720,7 +1257,6 @@ footer {
       </div>
 
       <div class="faq-list">
-
         <div class="faq-item">
           <button class="faq-question" onclick="toggleFaq(this)">
             Какой минимальный объём заказа?
@@ -1730,7 +1266,6 @@ footer {
             <p>Минимальный объём поставки — от 300 штук на одну позицию. Для крупных партий предусмотрены специальные оптовые цены. Каждый заказ рассчитывается индивидуально — свяжитесь с нами, и мы подберём оптимальные условия.</p>
           </div>
         </div>
-
         <div class="faq-item">
           <button class="faq-question" onclick="toggleFaq(this)">
             Когда я получу товар после оформления заказа?
@@ -1740,17 +1275,15 @@ footer {
             <p>Мы гарантируем поставку любых объёмов <strong>на следующий день</strong> после подтверждения и оплаты заказа. Доставка по Алматы — в течение дня. По Казахстану — срок зависит от региона, уточняйте у менеджера.</p>
           </div>
         </div>
-
         <div class="faq-item">
           <button class="faq-question" onclick="toggleFaq(this)">
             Какие диаметры горлышка доступны?
             <span class="faq-chevron">▾</span>
           </button>
           <div class="faq-answer">
-            <p>В нашем ассортименте три стандарта горлышка: <strong>28 мм</strong> — для воды, соусов, дозаторов; <strong>38 мм</strong> — универсальное, для соков, молочных продуктов, косметики; <strong>48 мм</strong> — широкое, для канистр объёмом 3 и 5 литров. Если нужен нестандартный размер — уточняйте, возможен заказ под производство.</p>
+            <p>В нашем ассортименте три стандарта горлышка: <strong>28 мм</strong> — для воды, соусов, дозаторов; <strong>38 мм</strong> — универсальное, для соков, молочных продуктов, косметики; <strong>48 мм</strong> — широкое, для канистр объёмом 3 и 5 литров.</p>
           </div>
         </div>
-
         <div class="faq-item">
           <button class="faq-question" onclick="toggleFaq(this)">
             Можно ли заказать бутылки нестандартного цвета?
@@ -1760,7 +1293,6 @@ footer {
             <p>Да. В стандартном ассортименте представлены прозрачные, белые, голубые, янтарные и чёрные бутылки. Нестандартные цвета изготавливаются под заказ — уточняйте минимальный тираж и сроки у менеджера.</p>
           </div>
         </div>
-
         <div class="faq-item">
           <button class="faq-question" onclick="toggleFaq(this)">
             Из какого сырья производятся бутылки?
@@ -1770,7 +1302,6 @@ footer {
             <p>Мы используем исключительно <strong>первичный ПЭТ-гранулят</strong> без добавления вторичного сырья. Это гарантирует высокую прозрачность, отсутствие запаха, соответствие пищевым стандартам безопасности.</p>
           </div>
         </div>
-
         <div class="faq-item">
           <button class="faq-question" onclick="toggleFaq(this)">
             Работаете ли вы с юридическими лицами и ИП?
@@ -1780,27 +1311,24 @@ footer {
             <p>Да, работаем с физическими лицами, ИП и ТОО. Для юридических лиц заключаем договор поставки, выставляем счёт, накладную и акт. Также можем работать через ЭСФ.</p>
           </div>
         </div>
-
         <div class="faq-item">
           <button class="faq-question" onclick="toggleFaq(this)">
             Доставляете ли вы в регионы Казахстана?
             <span class="faq-chevron">▾</span>
           </button>
           <div class="faq-answer">
-            <p>Да. У нас есть офисы в Алматы и Астане. Для других городов осуществляем отправку через транспортные компании (КазПочта, DHL, CDEK и др.) или договариваемся об удобной логистике индивидуально.</p>
+            <p>Да. У нас есть офисы в Алматы и Астане. Для других городов осуществляем отправку через транспортные компании или договариваемся об удобной логистике индивидуально.</p>
           </div>
         </div>
-
         <div class="faq-item">
           <button class="faq-question" onclick="toggleFaq(this)">
             Как рассчитывается цена на оптовый заказ?
             <span class="faq-chevron">▾</span>
           </button>
           <div class="faq-answer">
-            <p>Розничные цены указаны в каталоге. Оптовая стоимость рассчитывается индивидуально — зависит от модели, объёма тиража и условий доставки. Чем больше заказ, тем ниже цена за единицу. Напишите нам в WhatsApp или позвоните, и мы подготовим персональный прайс в течение 30 минут.</p>
+            <p>Розничные цены указаны в каталоге. Оптовая стоимость рассчитывается индивидуально — зависит от модели, объёма тиража и условий доставки. Чем больше заказ, тем ниже цена за единицу. Напишите нам или позвоните, и мы подготовим персональный прайс в течение 30 минут.</p>
           </div>
         </div>
-
       </div>
 
       <div class="faq-cta">
@@ -1808,20 +1336,20 @@ footer {
           <h3>Не нашли ответ на свой вопрос?</h3>
           <p>Напишите нам — ответим в течение 30 минут</p>
         </div>
-        <a href="https://wa.me/77006014090" class="btn-primary" target="_blank">💬 Написать в WhatsApp</a>
+        <button onclick="openPopup()" class="btn-primary">💬 Оставить заявку</button>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FORM -->
+<!-- FULL FORM SECTION -->
 <section id="form">
   <div style="background:var(--green-dark);padding:80px 5vw;">
     <div style="max-width:640px;margin:0 auto;">
       <div class="section-header" style="margin-bottom:36px;">
         <div class="section-tag" style="background:rgba(255,255,255,0.15);color:#fff;">Заявка</div>
         <h2 class="section-title" style="color:#fff;">Оставьте заявку</h2>
-        <p class="section-subtitle" style="color:rgba(255,255,255,0.65);">Заполните форму — мы свяжемся с вами в WhatsApp в течение 30 минут</p>
+        <p class="section-subtitle" style="color:rgba(255,255,255,0.65);">Заполните форму — мы свяжемся с вами в течение 30 минут</p>
       </div>
 
       <div style="background:#fff;border-radius:20px;padding:36px 32px;">
@@ -1834,7 +1362,7 @@ footer {
 
           <div class="form-group">
             <label class="form-label">Номер телефона *</label>
-            <input class="form-input" type="tel" id="f-phone" placeholder="+7 ___ ___ __ __">
+            <input class="form-input" type="tel" id="f-phone" placeholder="+7 777 005 15 51">
           </div>
 
           <div class="form-group">
@@ -1879,13 +1407,16 @@ footer {
           </div>
 
           <div id="form-error" style="display:none;background:#fef2f2;border:1px solid #fca5a5;border-radius:10px;padding:12px 16px;font-size:13px;color:#dc2626;font-weight:600;"></div>
+          <div id="form-success" style="display:none;background:#f0fdf4;border:1px solid #86efac;border-radius:10px;padding:12px 16px;font-size:14px;color:#166534;font-weight:600;text-align:center;">
+            ✅ Заявка отправлена! Мы свяжемся с вами в течение 30 минут.
+          </div>
 
-          <button onclick="sendToWhatsapp()" class="btn-primary" style="width:100%;justify-content:center;padding:16px;font-size:16px;border-radius:14px;">
-            💬 Отправить заявку в WhatsApp
+          <button onclick="sendFullFormToTelegram()" class="btn-primary" style="width:100%;justify-content:center;padding:16px;font-size:16px;border-radius:14px;">
+            📩 Отправить заявку
           </button>
 
           <p style="font-size:12px;color:var(--text-muted);text-align:center;line-height:1.6;">
-            Нажимая кнопку, вы переходите в WhatsApp с готовым сообщением.<br>Ваши данные не сохраняются на сервере.
+            Нажимая кнопку, вы соглашаетесь на обработку персональных данных
           </p>
         </div>
       </div>
@@ -1893,75 +1424,10 @@ footer {
   </div>
 </section>
 
-<style>
-.form-label {
-  display: block;
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--text);
-  margin-bottom: 8px;
-}
-.form-input {
-  width: 100%;
-  padding: 13px 16px;
-  border: 1.5px solid var(--border);
-  border-radius: 12px;
-  font-family: 'Manrope', sans-serif;
-  font-size: 14px;
-  color: var(--text);
-  background: var(--bg);
-  outline: none;
-  transition: border-color .2s, box-shadow .2s;
-  resize: vertical;
-}
-.form-input:focus {
-  border-color: var(--green);
-  box-shadow: 0 0 0 3px rgba(45,122,58,0.12);
-  background: #fff;
-}
-.form-input::placeholder { color: #b0b7c0; }
-select.form-input { cursor: pointer; }
-@media (max-width: 580px) {
-  #form .form-grid { grid-template-columns: 1fr !important; }
-  #form > div > div { padding: 24px 18px !important; }
-}
-</style>
-
-<script>
-function sendToWhatsapp() {
-  const name    = document.getElementById('f-name').value.trim();
-  const phone   = document.getElementById('f-phone').value.trim();
-  const product = document.getElementById('f-product').value;
-  const qty     = document.getElementById('f-qty').value.trim();
-  const city    = document.getElementById('f-city').value.trim();
-  const comment = document.getElementById('f-comment').value.trim();
-  const errBox  = document.getElementById('form-error');
-
-  if (!name || !phone) {
-    errBox.textContent = 'Пожалуйста, заполните имя и номер телефона.';
-    errBox.style.display = 'block';
-    return;
-  }
-  errBox.style.display = 'none';
-
-  let msg = '👋 Здравствуйте! Хочу оставить заявку.\n\n';
-  msg += '👤 *Имя:* ' + name + '\n';
-  msg += '📞 *Телефон:* ' + phone + '\n';
-  if (product) msg += '🧴 *Товар:* ' + product + '\n';
-  if (qty)     msg += '📦 *Количество:* ' + qty + ' шт.\n';
-  if (city)    msg += '🚚 *Город:* ' + city + '\n';
-  if (comment) msg += '💬 *Комментарий:* ' + comment + '\n';
-  msg += '\nОжидаю вашего ответа 🙏';
-
-  const encoded = encodeURIComponent(msg);
-  window.open('https://wa.me/77770051551?text=' + encoded, '_blank');
-}
-</script>
-
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <a href="#" class="footer-logo">ПакТара KZ</a>
+    <a href="#" class="footer-logo">QazPack</a>
     <div class="footer-copy">© 2026 · ПЭТ бутылки оптом · Алматы</div>
     <div class="footer-links">
       <a href="#catalogue">Каталог</a>
@@ -1972,52 +1438,313 @@ function sendToWhatsapp() {
   </div>
 </footer>
 
-<!-- BACK TO TOP -->
 <button id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Наверх">↑</button>
 
+<!-- WHATSAPP FLOAT BUTTON -->
+<a href="https://wa.me/77770051551" target="_blank" id="waFloat" title="Написать в WhatsApp">
+  <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#fff" width="28" height="28" style="flex-shrink:0">
+    <path d="M16 2C8.268 2 2 8.268 2 16c0 2.492.651 4.835 1.79 6.87L2 30l7.347-1.766A13.94 13.94 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2zm0 25.5a11.46 11.46 0 0 1-5.847-1.6l-.42-.25-4.36 1.048 1.074-4.245-.274-.435A11.46 11.46 0 0 1 4.5 16C4.5 9.596 9.596 4.5 16 4.5S27.5 9.596 27.5 16 22.404 27.5 16 27.5zm6.29-8.61c-.344-.172-2.036-1.004-2.352-1.118-.316-.115-.546-.172-.776.172-.23.344-.89 1.118-1.09 1.348-.2.23-.4.258-.744.086-.344-.172-1.452-.535-2.766-1.707-1.022-.912-1.712-2.037-1.912-2.381-.2-.344-.021-.53.15-.701.155-.154.344-.402.516-.603.172-.2.23-.344.344-.573.115-.23.058-.43-.029-.602-.086-.172-.776-1.87-1.063-2.562-.28-.673-.563-.582-.776-.593l-.661-.011c-.23 0-.602.086-.917.43-.316.344-1.205 1.177-1.205 2.87s1.233 3.328 1.405 3.558c.172.23 2.428 3.71 5.882 5.203.822.355 1.464.567 1.964.726.825.263 1.576.226 2.17.137.662-.099 2.036-.832 2.323-1.635.287-.803.287-1.491.2-1.635-.084-.143-.312-.229-.656-.401z"/>
+  </svg>
+  <span class="wa-label">Написать в WhatsApp</span>
+</a>
+
+<style>
+#waFloat {
+  position: fixed;
+  bottom: 28px;
+  left: 28px;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #25D366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 13px 20px 13px 16px;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.45);
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  transition: transform .25s, box-shadow .25s;
+  white-space: nowrap;
+  animation: waFadeIn .6s ease .5s both;
+}
+@keyframes waFadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+#waFloat:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(37,211,102,0.6);
+}
+@media (max-width: 580px) {
+  #waFloat { padding: 14px; border-radius: 50%; }
+  .wa-label { display: none; }
+}
+</style>
+
 <script>
-// Scroll-triggered card animations
-const cards = document.querySelectorAll('.product-card');
-const io = new IntersectionObserver((entries) => {
-  entries.forEach((e, i) => {
-    if (e.isIntersecting) {
-      setTimeout(() => e.target.classList.add('visible'), i * 60);
-      io.unobserve(e.target);
-    }
+  // =====================
+  // TELEGRAM CONFIG
+  // =====================
+  const TG_TOKEN = "8747566836:AAFXRK-QuGEIMjXiL5cjRJg1kyomKyI5vxg";
+  const TG_CHAT_ID = "1985244006";
+
+  async function sendTelegram(text) {
+    const res = await fetch(`https://api.telegram.org/bot${TG_TOKEN}/sendMessage`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ chat_id: TG_CHAT_ID, text: text, parse_mode: "HTML" })
+    });
+    return res.ok;
+  }
+
+  // =====================
+  // POPUP
+  // =====================
+  function openPopup() {
+    document.getElementById('popupOverlay').classList.add('active');
+    document.body.style.overflow = 'hidden';
+    document.getElementById('popupFormView').style.display = 'block';
+    document.getElementById('popupSuccessView').style.display = 'none';
+    document.getElementById('p-name').value = '';
+    document.getElementById('p-phone').value = '';
+    document.getElementById('popup-error').style.display = 'none';
+  }
+
+  function closePopup() {
+    document.getElementById('popupOverlay').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  function closePopupOnOverlay(e) {
+    if (e.target === document.getElementById('popupOverlay')) closePopup();
+  }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closePopup();
   });
-}, { threshold: 0.1 });
-cards.forEach(c => io.observe(c));
 
-// Back to top
-const backBtn = document.getElementById('backTop');
-window.addEventListener('scroll', () => {
-  backBtn.classList.toggle('visible', window.scrollY > 400);
-});
+  async function sendPopupToTelegram() {
+    const name  = document.getElementById('p-name').value.trim();
+    const phone = document.getElementById('p-phone').value.trim();
+    const errBox = document.getElementById('popup-error');
 
-// Mobile menu
-function toggleMenu() {
-  document.getElementById('mobileNav').classList.toggle('open');
-}
+    if (!name || !phone) {
+      errBox.textContent = 'Пожалуйста, заполните имя и номер телефона.';
+      errBox.style.display = 'block';
+      return;
+    }
+    if (!validatePhone(phone)) {
+      errBox.textContent = 'Введите корректный номер телефона (11 цифр), например: +7 777 005 15 51';
+      errBox.style.display = 'block';
+      return;
+    }
+    errBox.style.display = 'none';
 
-// FAQ accordion
-function toggleFaq(btn) {
-  const item = btn.closest('.faq-item');
-  const isOpen = item.classList.contains('open');
-  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
-  if (!isOpen) item.classList.add('open');
-}
+    const text = `📩 <b>Новая заявка с сайта (быстрая форма)</b>\n\n👤 <b>Имя:</b> ${name}\n📞 <b>Телефон:</b> ${phone}`;
 
-function filterCat(cat, btn) {
-  document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
-  btn.classList.add('active');
-  document.querySelectorAll('.product-card').forEach(card => {
-    if (cat === 'all' || card.dataset.cat === cat) {
-      card.classList.remove('hidden');
+    const ok = await sendTelegram(text);
+    if (ok) {
+      document.getElementById('popupFormView').style.display = 'none';
+      document.getElementById('popupSuccessView').style.display = 'block';
+      setTimeout(closePopup, 3000);
     } else {
-      card.classList.add('hidden');
+      errBox.textContent = 'Ошибка отправки. Попробуйте позвонить нам напрямую.';
+      errBox.style.display = 'block';
     }
+  }
+
+  // =====================
+  // FULL FORM (Telegram)
+  // =====================
+  async function sendFullFormToTelegram() {
+    const name    = document.getElementById('f-name').value.trim();
+    const phone   = document.getElementById('f-phone').value.trim();
+    const product = document.getElementById('f-product').value;
+    const qty     = document.getElementById('f-qty').value.trim();
+    const city    = document.getElementById('f-city').value.trim();
+    const comment = document.getElementById('f-comment').value.trim();
+    const errBox  = document.getElementById('form-error');
+    const sucBox  = document.getElementById('form-success');
+
+    if (!name || !phone) {
+      errBox.textContent = 'Пожалуйста, заполните имя и номер телефона.';
+      errBox.style.display = 'block';
+      sucBox.style.display = 'none';
+      return;
+    }
+    if (!validatePhone(phone)) {
+      errBox.textContent = 'Введите корректный номер телефона (11 цифр), например: +7 777 005 15 51';
+      errBox.style.display = 'block';
+      sucBox.style.display = 'none';
+      return;
+    }
+    errBox.style.display = 'none';
+
+    let text = `📩 <b>Новая заявка с сайта (полная форма)</b>\n\n`;
+    text += `👤 <b>Имя:</b> ${name}\n`;
+    text += `📞 <b>Телефон:</b> ${phone}\n`;
+    if (product) text += `🧴 <b>Товар:</b> ${product}\n`;
+    if (qty)     text += `📦 <b>Количество:</b> ${qty} шт.\n`;
+    if (city)    text += `🚚 <b>Город:</b> ${city}\n`;
+    if (comment) text += `💬 <b>Комментарий:</b> ${comment}\n`;
+
+    const ok = await sendTelegram(text);
+    if (ok) {
+      sucBox.style.display = 'block';
+      errBox.style.display = 'none';
+      document.getElementById('f-name').value = '';
+      document.getElementById('f-phone').value = '';
+      document.getElementById('f-product').value = '';
+      document.getElementById('f-qty').value = '';
+      document.getElementById('f-city').value = '';
+      document.getElementById('f-comment').value = '';
+    } else {
+      errBox.textContent = 'Ошибка отправки. Позвоните нам: +7 777 005 15 51';
+      errBox.style.display = 'block';
+    }
+  }
+
+  // =====================
+  // PHONE VALIDATION
+  // =====================
+  function validatePhone(phone) {
+    // Strip all non-digit characters
+    const digits = phone.replace(/\D/g, '');
+    // Accept 10 digits (starting with 7xx) or 11 digits starting with 7 or 8
+    return digits.length === 11 && (digits.startsWith('7') || digits.startsWith('8'))
+        || digits.length === 10 && digits.startsWith('7');
+  }
+
+  // Auto-format phone input as user types: +7 (777) 005-15-51
+  function setupPhoneInput(id) {
+    const input = document.getElementById(id);
+    if (!input) return;
+    input.addEventListener('input', function() {
+      let val = this.value.replace(/\D/g, '');
+      if (val.startsWith('8')) val = '7' + val.slice(1);
+      if (!val.startsWith('7') && val.length > 0) val = '7' + val;
+      val = val.slice(0, 11);
+      let formatted = '';
+      if (val.length > 0)  formatted = '+7';
+      if (val.length > 1)  formatted += ' (' + val.slice(1, 4);
+      if (val.length >= 4) formatted += ')';
+      if (val.length > 4)  formatted += ' ' + val.slice(4, 7);
+      if (val.length > 7)  formatted += '-' + val.slice(7, 9);
+      if (val.length > 9)  formatted += '-' + val.slice(9, 11);
+      this.value = formatted;
+    });
+  }
+  setupPhoneInput('p-phone');
+  setupPhoneInput('f-phone');
+
+  // =====================
+  // CATALOGUE: show only first 3 rows, rest hidden
+  // =====================
+  let catalogueExpanded = false;
+  const ROWS_VISIBLE = 3; // how many rows to show initially
+
+  function initCatalogue() {
+    updateCatalogueVisibility();
+  }
+
+  function updateCatalogueVisibility() {
+    const grid = document.getElementById('productGrid');
+    const cols = getGridColumns(grid);
+    const limit = cols * ROWS_VISIBLE;
+
+    const allCards = Array.from(grid.querySelectorAll('.product-card:not(.hidden)'));
+    const total = allCards.length;
+
+    allCards.forEach((card, i) => {
+      if (!catalogueExpanded && i >= limit) {
+        card.classList.add('catalogue-hidden');
+      } else {
+        card.classList.remove('catalogue-hidden');
+      }
+    });
+
+    const wrap = document.getElementById('showMoreWrap');
+    const hint = document.getElementById('showMoreHint');
+    if (total <= limit) {
+      wrap.style.display = 'none';
+    } else {
+      wrap.style.display = 'block';
+      document.getElementById('showMoreBtn').innerHTML = catalogueExpanded
+        ? '<span>▲</span> Свернуть каталог'
+        : '<span>▼</span> Показать все товары';
+      hint.textContent = catalogueExpanded
+        ? 'Показан весь каталог'
+        : `Показано ${limit} из ${total} товаров`;
+    }
+  }
+
+  function getGridColumns(grid) {
+    const gridStyle = window.getComputedStyle(grid);
+    const cols = gridStyle.gridTemplateColumns.split(' ').length;
+    return cols || 4;
+  }
+
+  function toggleShowMore() {
+    catalogueExpanded = !catalogueExpanded;
+    updateCatalogueVisibility();
+    if (!catalogueExpanded) {
+      document.getElementById('catalogue').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  window.addEventListener('resize', () => {
+    if (!catalogueExpanded) updateCatalogueVisibility();
   });
-}
+
+  // =====================
+  // SCROLL ANIMATIONS
+  // =====================
+  const cards = document.querySelectorAll('.product-card');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 60);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  cards.forEach(c => io.observe(c));
+
+  const backBtn = document.getElementById('backTop');
+  window.addEventListener('scroll', () => {
+    backBtn.classList.toggle('visible', window.scrollY > 400);
+  });
+
+  function toggleMenu() {
+    document.getElementById('mobileNav').classList.toggle('open');
+  }
+
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  function filterCat(cat, btn) {
+    catalogueExpanded = false;
+    document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.product-card').forEach(card => {
+      if (cat === 'all' || card.dataset.cat === cat) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+    updateCatalogueVisibility();
+  }
+
+  // Init on load
+  initCatalogue();
 </script>
 </body>
 </html>
