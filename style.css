@@ -37,7 +37,7 @@ nav a:hover { color: var(--green); }
 .hero { max-width: 1200px; margin: 0 auto; padding: 80px 5vw 60px; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
 .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--green-pale); color: var(--green-dark); font-size: 13px; font-weight: 600; padding: 6px 14px; border-radius: 100px; margin-bottom: 20px; }
 .hero-badge::before { content: ''; width: 8px; height: 8px; background: var(--green); border-radius: 50%; }
-.hero h1 { font-family: 'Unbounded', sans-serif; font-size: clamp(30px, 4vw, 52px); font-weight: 900; line-height: 1.1; color: var(--text); margin-bottom: 20px; }
+.hero h1 { font-family: 'Unbounded', sans-serif; font-size: clamp(30px, 4vw, 48px); font-weight: 900; line-height: 1.1; color: var(--text); margin-bottom: 20px; }
 .hero h1 span { color: var(--green); }
 .hero p { font-size: 17px; color: var(--text-muted); margin-bottom: 36px; line-height: 1.7; max-width: 480px; }
 .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
@@ -301,6 +301,7 @@ select.form-input { cursor: pointer; }
     gap: 40px;
     padding: 50px 5vw 40px;
   }
+  .stat-num {font-size: 22px}
 
   /* 👇 МЕНЯЕМ МЕСТАМИ БЛОКИ */
   .hero-visual {
@@ -395,3 +396,139 @@ select.form-input { cursor: pointer; }
 .hero-left > *:nth-child(3) { animation-delay: .2s; }
 .hero-left > *:nth-child(4) { animation-delay: .3s; }
 .hero-left > *:nth-child(5) { animation-delay: .4s; }
+
+#waFloat {
+  position: fixed;
+  bottom: 28px;
+  left: 28px;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #25D366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 13px 20px 13px 16px;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.45);
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  transition: transform .25s, box-shadow .25s;
+  white-space: nowrap;
+  animation: waFadeIn .6s ease .5s both;
+}
+@keyframes waFadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+#waFloat:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(37,211,102,0.6);
+}
+@media (max-width: 580px) {
+  #waFloat { padding: 14px; border-radius: 50%; }
+  .wa-label { display: none; }
+}
+
+/* ============================================
+   CUSTOM CURSOR — добавьте в конец style.css
+   ============================================ */
+
+/* Скрываем стандартный курсор только на ПК */
+@media (pointer: fine) {
+  *, *::before, *::after {
+    cursor: none !important;
+  }
+
+  #cursor-dot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: #16a34a; /* зелёный под бренд */
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99999;
+    transition: width 0.2s ease, height 0.2s ease, background 0.2s ease, opacity 0.3s ease;
+    will-change: transform;
+  }
+
+  #cursor-ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    border: 1.5px solid rgba(22, 163, 74, 0.55);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99998;
+    transition: width 0.25s ease, height 0.25s ease, border-color 0.25s ease, opacity 0.3s ease;
+    will-change: transform;
+  }
+
+  /* Hover состояние */
+  #cursor-dot.is-hovering {
+    width: 12px;
+    height: 12px;
+    background: #15803d;
+  }
+
+  #cursor-ring.is-hovering {
+    width: 52px;
+    height: 52px;
+    border-color: rgba(22, 163, 74, 0.35);
+    border-width: 2px;
+  }
+
+  /* Клик */
+  #cursor-dot.is-clicking {
+    width: 6px;
+    height: 6px;
+    background: #166534;
+  }
+
+  #cursor-ring.is-clicking {
+    width: 28px;
+    height: 28px;
+    border-color: rgba(22, 163, 74, 0.8);
+    border-width: 2px;
+  }
+}
+
+/* ============================================
+   PRODUCT CARD IMAGES — замените .product-img стили
+   или добавьте эти новые стили в style.css
+   ============================================ */
+
+.product-img {
+  position: relative;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-img-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 16px;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  display: block;
+}
+
+.product-card:hover .product-img-photo {
+  transform: scale(1.08) translateY(-4px);
+}
+
+/* Убираем старый emoji-контейнер если он остался */
+.product-img-emoji {
+  display: none;
+}
